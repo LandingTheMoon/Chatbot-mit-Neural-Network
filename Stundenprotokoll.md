@@ -1,6 +1,4 @@
-Hallo Welt
-
-Hallo Welt von Louis
+# Stundenprotokoll
 
 ### 22.08.2022 Jan Drewes
 
