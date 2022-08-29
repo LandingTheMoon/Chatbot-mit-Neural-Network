@@ -1,4 +1,4 @@
-# Zeile des Programms:
+# TO-DOs:
 
 - [ ] Python learnen um dieses Projekt um zusetzten
 - [ ] Ein Chatbot der mit einem Redet
