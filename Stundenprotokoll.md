@@ -18,3 +18,4 @@ Ich habe heute weider im Unterricht überlegt welches Projekt wir angehen wollen
 Wir haben uns heute darauf geeinigt einen Chatbot zu programmieren, der in einer zukünftigen Version vielleicht auch mathematische/physikalische Probleme lösen kann. Um eine Übersicht zu behalten habe ich heute eine To-Do Liste auf der Projektseite erstellt. Dazu habe ich angefangen Resourcen zurecht zu suchen damit Louis und ich anfangen können das Programm zu schreiben.
 
 ### 05.09.2022 Jan Drewes
+Ich habe heute vergebens versucht Anacondam mit pytorch und Visual Studio Code (VS Code) zum laufen zu bekommen auf meinem Computer. Dies hat leider nicht funktioniert. Ich werde mich zuhause damit weiter auseinander setzten, damit es bis Donnerstag funktioniert.
