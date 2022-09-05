@@ -13,6 +13,8 @@ Zudem habe ich mich angefangen mit GitHub und mit der Programmiersprache Markdow
 
 Ich habe heute weider im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt ob wir nicht ein automatiesiertes Bewässerungssytem machen für eine Zimmerpflanze. Diese Idee haben wir erstmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre wenn wir etwas machen was nur programmiert wird, da Louis ja in Frankreich ist. Wir üpberlegen also noch mal weiter, aber plannen nächste Woche anzufangen.
 
-### 29.08.2022
+### 29.08.2022 Jan Drewes
 
 Wir haben uns heute darauf geeinigt einen Chatbot zu programmieren, der in einer zukünftigen Version vielleicht auch mathematische/physikalische Probleme lösen kann. Um eine Übersicht zu behalten habe ich heute eine To-Do Liste auf der Projektseite erstellt. Dazu habe ich angefangen Resourcen zurecht zu suchen damit Louis und ich anfangen können das Programm zu schreiben.
+
+### 05.09.2022 Jan Drewes
