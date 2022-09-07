@@ -13,9 +13,18 @@ Zudem habe ich mich angefangen mit GitHub und mit der Programmiersprache Markdow
 
 Ich habe heute weider im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt ob wir nicht ein automatiesiertes Bewässerungssytem machen für eine Zimmerpflanze. Diese Idee haben wir erstmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre wenn wir etwas machen was nur programmiert wird, da Louis ja in Frankreich ist. Wir üpberlegen also noch mal weiter, aber plannen nächste Woche anzufangen.
 
+### 26.08.2022 Louis Lemberg
+
+Nachdem Jan und ich uns gestern nun schon zum zweiten Mal von unseren Ideen nach einigen Überlegungen abgewendet haben, habe ich mich weiter auf die Suche begeben nach Ideen was wir machen könnten. Dabei hab mich ausschließlich auf rein programmierbare Projekte beschränkt, da dies für uns durch den vorerst vorliegenden örtlichen Abstand beim Arbeiten einfach schien.
+Weitergehend habe ich meine Einarbeitung in GitHub und Markdown vorerst beendet.
+
 ### 29.08.2022 Jan Drewes
 
 Wir haben uns heute darauf geeinigt einen Chatbot zu programmieren, der in einer zukünftigen Version vielleicht auch mathematische/physikalische Probleme lösen kann. Um eine Übersicht zu behalten habe ich heute eine To-Do Liste auf der Projektseite erstellt. Dazu habe ich angefangen Resourcen zurecht zu suchen damit Louis und ich anfangen können das Programm zu schreiben.
+
+### 31.08.2022 Louis Lemberg
+
+Gestern haben Jan und ich uns wieder per WhatsApp verständigt und haben uns nun final dazu entschlossen einen Chatbot zu programmieren, der nach dem grundlegenden Erstellen in späteren Versionen in dem Sinne weiterentwickelt, dass dieser mathematische und auch physikalische Probleme lösen kann. Da wir uns dafür entschlossen diesen mit Python zu programmieren, habe ich damit angefangen meine bereits vorhandenen Vorkenntnisse in Python aufzufrischen.
 
 ### 05.09.2022 Jan Drewes
 Ich habe heute vergebens versucht Anacondam mit pytorch und Visual Studio Code (VS Code) zum laufen zu bekommen auf meinem Computer. Dies hat leider nicht funktioniert. Ich werde mich zuhause damit weiter auseinander setzten, damit es bis Donnerstag funktioniert.
