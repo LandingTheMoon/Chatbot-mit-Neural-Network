@@ -31,7 +31,8 @@ Ich habe heute vergebens versucht Anacondam mit pytorch und Visual Studio Code (
 
 ### 08.09.2022 Jan Drewes
 Nach dem Ich zuhause VS Code mit Anaconda zum laufen gebracht habe, habe ich heute im Unterricht angefangen mich mit dem Program und der Sprache (Python) vertraut zu machen. Zum Beispiel habe ich heute das hier geschrieben:
-``` import torch
+``` 
+    import torch
     import numpy as np
     import numpy.random as npr
 
