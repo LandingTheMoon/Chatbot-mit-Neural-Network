@@ -31,6 +31,10 @@ Ich habe heute vergebens versucht Anacondam mit pytorch und Visual Studio Code (
 
 ### 08.09.2022 Jan Drewes
 Nach dem Ich zuhause VS Code mit Anaconda zum laufen gebracht habe, habe ich heute im Unterricht angefangen mich mit dem Program und der Sprache (Python) vertraut zu machen. Zum Beispiel habe ich heute das hier geschrieben:
+
+<details>
+    <summary>Erster Test Code</summary>
+    
 ``` 
     import torch
     import numpy as np
@@ -46,4 +50,6 @@ Nach dem Ich zuhause VS Code mit Anaconda zum laufen gebracht habe, habe ich heu
         else:
             print(msg5) 
 ```
+</details>
+
 Dieses kliene Program fordert jemanden auf etwas zuschreiben und überprüft dann ob die Person "Hello" geschrieben hat. Wenn nicht dann fordert das Program einen auf etwas anderes zuschreiben. Wenn die Person "Hello" schreibt dannn antwort das Programm mit "Hello" und das Program ist zu ende.
