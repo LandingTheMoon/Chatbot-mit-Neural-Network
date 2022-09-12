@@ -59,31 +59,33 @@ Ich habe heute im Unterricht das Program vom letzten mal verbessert und erweiter
 
 <details>
     <summary>Erweiteter Test Code</summary>
+    
 ```
-import torch
-import numpy as np
-import numpy.random as npr
+    import torch
+    import numpy as np
+    import numpy.random as npr
 
 
-H = input("Hello! ")
-while (H != ""):
-    if (H == "Hello") or (H == "Hi"):
-        H = input("How are you? ")
-    elif (H == "Good"):
-        print("Great! Me too.")
-        break
-    elif (H == "Bad"):
-        print("I'm sorry to hear that.")
-        break
-    elif (H == "Fuck you" or H == "F U"):
-        H = input("Please do not swear. ")
-    elif (H == "Shut up" or H == "Shut it"):
-        print("Alright")
-        break
-    elif (H == "exit"):
-        break
-    else:
-        H = input("I do not understand. ")
+    H = input("Hello! ")
+    while (H != ""):
+        if (H == "Hello") or (H == "Hi"):
+            H = input("How are you? ")
+        elif (H == "Good"):
+            print("Great! Me too.")
+            break
+        elif (H == "Bad"):
+            print("I'm sorry to hear that.")
+            break
+        elif (H == "Fuck you" or H == "F U"):
+            H = input("Please do not swear. ")
+        elif (H == "Shut up" or H == "Shut it"):
+            print("Alright")
+            break
+        elif (H == "exit"):
+            break
+        else:
+            H = input("I do not understand. ")
 ```
 </details>
+
 Als nächstestes werde ich mir wahrscheinlich mal anschauen wie man eine Oberfläche machen kann damit das Program nicht im Terminal laufen muss.
