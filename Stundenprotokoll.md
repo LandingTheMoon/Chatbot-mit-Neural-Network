@@ -53,3 +53,37 @@ Nach dem Ich zuhause VS Code mit Anaconda zum laufen gebracht habe, habe ich heu
 </details>
 
 Dieses kliene Program fordert jemanden auf etwas zuschreiben und überprüft dann ob die Person "Hello" geschrieben hat. Wenn nicht dann fordert das Program einen auf etwas anderes zuschreiben. Wenn die Person "Hello" schreibt dannn antwort das Programm mit "Hello" und das Program ist zu ende.
+
+### 12.09.2022 Jan Drewes
+Ich habe heute im Unterricht das Program vom letzten mal verbessert und erweitert, sodass es jetzt eine zweite Ebene von "How are you?".
+
+<details>
+    <summary>Erweiteter Test Code</summary>
+```
+import torch
+import numpy as np
+import numpy.random as npr
+
+
+H = input("Hello! ")
+while (H != ""):
+    if (H == "Hello") or (H == "Hi"):
+        H = input("How are you? ")
+    elif (H == "Good"):
+        print("Great! Me too.")
+        break
+    elif (H == "Bad"):
+        print("I'm sorry to hear that.")
+        break
+    elif (H == "Fuck you" or H == "F U"):
+        H = input("Please do not swear. ")
+    elif (H == "Shut up" or H == "Shut it"):
+        print("Alright")
+        break
+    elif (H == "exit"):
+        break
+    else:
+        H = input("I do not understand. ")
+```
+</details>
+Als nächstestes werde ich mir wahrscheinlich mal anschauen wie man eine Oberfläche machen kann damit das Program nicht im Terminal laufen muss.
