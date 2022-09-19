@@ -89,3 +89,6 @@ Ich habe heute im Unterricht das Program vom letzten mal verbessert und erweiter
 </details>
 
 Als nächstestes werde ich mir wahrscheinlich mal anschauen wie man eine Oberfläche machen kann damit das Program nicht im Terminal laufen muss.
+
+###19.09.2022 Jan Drewes
+Heute habe ich angefangen pytorch zulernen, also Nueral Networks. Dies habe ich getan, dürch die offiziele pytorch Seite (https://pytorch.org/tutorials/index.html). Ich habe angegfangen mir die basics von pytorch anzuschauen, um mich langsam drauf hin zuarbeiten das ich den Chatbot anfangen kann. Angefangen habe ich mit tensors und dann habe ich mir Nueral Networks angeschaut und wie sie funktionieren.
