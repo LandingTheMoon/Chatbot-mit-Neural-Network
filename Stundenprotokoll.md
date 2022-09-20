@@ -54,6 +54,9 @@ Nach dem Ich zuhause VS Code mit Anaconda zum laufen gebracht habe, habe ich heu
 
 Dieses kliene Program fordert jemanden auf etwas zuschreiben und überprüft dann ob die Person "Hello" geschrieben hat. Wenn nicht dann fordert das Program einen auf etwas anderes zuschreiben. Wenn die Person "Hello" schreibt dannn antwort das Programm mit "Hello" und das Program ist zu ende.
 
+### 09.09.2022 Louis Lemberg
+Ich habe in der vergangen Woche meine Pythonkenntnisse aufgefrischt und habe mir meine Programmierumgebung eingerichtet. Ich habe mich dazu entschieden in VisualStudio Code zu programmieren, da ich mit diesem Programm schon vertraut bin. Zudem habe ich mir auf Rat von Jan Anaconda und pytorch installiert.
+
 ### 12.09.2022 Jan Drewes
 Ich habe heute im Unterricht das Program vom letzten mal verbessert und erweitert, sodass es jetzt eine zweite Ebene von "How are you?".
 
@@ -90,5 +93,46 @@ Ich habe heute im Unterricht das Program vom letzten mal verbessert und erweiter
 
 Als nächstestes werde ich mir wahrscheinlich mal anschauen wie man eine Oberfläche machen kann damit das Program nicht im Terminal laufen muss.
 
-###19.09.2022 Jan Drewes
+### 13.09.2022 Louis Lemberg
+Am Wochenende habe ich mich theoretisch darum informiert wie man einen Chatbot beispielsweise programmieren könnte und meine Pythonkenntnisse in diesem Bereich dann auch verbessert.
+Heute habe ich dann angefangen einen ersten kleinen Chatbot zu programmieren, der auf ganz einfache Fragen und Antworten antwortet. Dies sollen Fragen sein, wie zum Beispiel "Wie geht es dir?".
+
+### 19.09.2022 Jan Drewes
 Heute habe ich angefangen pytorch zulernen, also Nueral Networks. Dies habe ich getan, dürch die offiziele pytorch Seite (https://pytorch.org/tutorials/index.html). Ich habe angegfangen mir die basics von pytorch anzuschauen, um mich langsam drauf hin zuarbeiten das ich den Chatbot anfangen kann. Angefangen habe ich mit tensors und dann habe ich mir Nueral Networks angeschaut und wie sie funktionieren.
+
+### 20.09.2022 Louis Lemberg
+In der vergangenen Woche habe ich leider etwas schleppend, da ich ziemlich viel für die Schule in Frankreich zu tun hatte, den ersten kleinen Chatbot programmier. Dies ist der dazugehörige Programmcode:
+
+<details>
+    <summary>Erster kleiner Chatbot</summary>
+    
+``` 
+print("Hello my friend, I'm Simon, you're Chatbot!")
+print("-------------------------------------------")
+
+while True:
+    print("> How can I help you?")
+    userinput = input()
+    if userinput == "Hello":
+        userinput = input("> Hi, how are you? ")
+        if userinput == "Good":
+            print("> That's good! Is there anything else I can do for you?")
+            userinput = input()
+            if userinput == "No":
+                print("> Ok, goodbye, see you soon!")
+                break
+        else:
+            print("> I'm sorry for you! Is there anything I can for you?")
+            userinput = input()
+            if userinput == "No":
+                print("> Ok, goodbye, see you soon!")
+                break
+    elif userinput == "exit":
+        break
+    else:
+        print("> I'm sorry, I think I can't help you... I'm still in progress! Have a nice day!")
+        break
+```
+</details>
+
+Dieser kann in der ersten Version auf die Nachricht "Hallo" von dem User antworten und fragt dann wie es dem User geht, und interagiert dann mit jeweiligen Antwort wieder. Als nächstes möchte ich diesen Chatbot noch ein bisschen komplexer gestalten.
