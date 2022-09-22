@@ -141,7 +141,7 @@ Dieser kann in der ersten Version auf die Nachricht "Hallo" von dem User antwort
 Ich habe heute im Unterricht damit angefangen eine Datei zu machen wo Dataen hinterlegt sind. Dies soll später der Ort sein wo die trainings Daten sind vom A.I. Hier für habe ich das Dateiformar .json verwendet. Ich habe dann in einem Program versucht auf diese Daten zuzugreifen. Dies hat funktioniert und ich habe mich daran gesetzt ein weg zu finden um wörter in Zahlen zu machen die für den Komputer verständich sind.
 
 <details>
-    <summary>Code um Buchstaben in Zahlen auszudrücken<\summary>
+    <summary>Code um Buchstaben in Zahlen auszudrücken</summary>
     
 ``` 
     import torch
