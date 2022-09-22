@@ -136,3 +136,29 @@ while True:
 </details>
 
 Dieser kann in der ersten Version auf die Nachricht "Hallo" von dem User antworten und fragt dann wie es dem User geht, und interagiert dann mit jeweiligen Antwort wieder. Als nächstes möchte ich diesen Chatbot noch ein bisschen komplexer gestalten.
+
+### 22.09.2022 Jan Drewes
+Ich habe heute im Unterricht damit angefangen eine Datei zu machen wo Dataen hinterlegt sind. Dies soll später der Ort sein wo die trainings Daten sind vom A.I. Hier für habe ich das Dateiformar .json verwendet. Ich habe dann in einem Program versucht auf diese Daten zuzugreifen. Dies hat funktioniert und ich habe mich daran gesetzt ein weg zu finden um wörter in Zahlen zu machen die für den Komputer verständich sind.
+
+<details>
+    <summary>Code um Buchstaben in Zahlen auszudrücken<\summary>
+    
+``` 
+    import torch
+    import math
+    import numpy as np
+    import json
+
+    with open("Data.json") as file:
+        data = json.load(file)
+    data2 = []
+    for intent in data["intents"]:
+        for pattern in intent["patterns"]:
+            data3 = pattern
+            data2.extend(data3)
+            data4 = [ord(x) for x in data2]
+    print(data4)
+```
+</details>
+        
+Dieser Code holt sich aus der .json datei eine Reihe an einzelnen Buchstaben die zusammen ein Wort ergeben. Das Program drückt sie dann als Zahlen aus. Ich plane durch einen Algorytmus diese Zahlen zu Listen machen wo eine Liste ein Wort ergibt. Dies kann ich machen, weil das Program die Buchstaben nach dem ASCII (American Standard Code for Information Interchange) convertiert.
