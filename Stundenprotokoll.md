@@ -162,3 +162,6 @@ Ich habe heute im Unterricht damit angefangen eine Datei zu machen wo Dataen hin
 </details>
         
 Dieser Code holt sich aus der .json datei eine Reihe an einzelnen Buchstaben die zusammen ein Wort ergeben. Das Program drückt sie dann als Zahlen aus. Ich plane durch einen Algorytmus diese Zahlen zu Listen machen wo eine Liste ein Wort ergibt. Dies kann ich machen, weil das Program die Buchstaben nach dem ASCII (American Standard Code for Information Interchange) convertiert.
+
+### 26.09.2022 Jan Drewes
+Heute in der Stunde habe ich versucht die Liste von Zahlen nach Wörtern zu sortieren. Hierzu habe ich, den ASCII verwendet und ganz viele If-Statments. Dies hat dur mäßig funktioniert und ich werde daran noch zuhause arbeiten um es zum laufen zu kriegen.
