@@ -165,3 +165,6 @@ Dieser Code holt sich aus der .json datei eine Reihe an einzelnen Buchstaben die
 
 ### 26.09.2022 Jan Drewes
 Heute in der Stunde habe ich versucht die Liste von Zahlen nach Wörtern zu sortieren. Hierzu habe ich, den ASCII verwendet und ganz viele If-Statments. Dies hat dur mäßig funktioniert und ich werde daran noch zuhause arbeiten um es zum laufen zu kriegen.
+
+### 06.10.2022 Jan Drewes
+Nach dem ich letzte Woche auf diese Schwiegrigkeit gestoßen, habe ich mich in der Zeit zwischen den stunden daran gesetzt das Problem zu lösen. Ich habe es auch geschaft das Problem zu lösen. Da diese Lösen etwa komplitzierter ist und etwas länger ist werde ich sie hier nicht einfügen. Ich habe das gemacht um zuverstehen wie abkürzungen das machen. Im weiteren habe ich dann in der Stunde angefangen mir verschiedene möglichkeiten einen Chatbot zu programieren angeschaut. Um dann zu überlegen welche wir benutzten sollten.
