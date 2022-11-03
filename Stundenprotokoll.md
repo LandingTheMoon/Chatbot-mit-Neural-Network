@@ -297,3 +297,6 @@ window.mainloop()
 </details>
 
 Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan und ich getrennt arbeiten mussten, sagen, dass ich nicht wirklich zufrieden bin. Durch die vielen Aktivitäten und die sehr langgehende Schule in Frankreich, habe ich nicht immer regelmäßig Zeit gefunden und war leider nie so richtig im Arbeitsflow. Ich werde jetzt dafür natürlich nach Absprache mit Jan alles nachzuholen, was nachzuholen ist und mich versuchen umso mehr einzubringen.
+
+### 03.11.2022
+Heute war die erste Stunde in der wir beide zusammen an unserem Projekt gearbeitet haben. Wir standen direkt vor der Entscheidung, ob wir unseren Chatbot mit einem Movie Script oder anhand einer selbst geschriebenen Liste von möglichen Inputs und Responses trainieren wollen. Wir fanden beides sehr spannend, haben uns dann jedoch final für die zweite Variante mit der selbstgeschriebenen Liste entschieden. Damit haben wir dann angefangen den Bot für das "Training" vorzubereiten. Sodass wir vorraussichtlich in der nächsten Stunde einen ersten Test machen können.
