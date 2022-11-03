@@ -163,8 +163,137 @@ Ich habe heute im Unterricht damit angefangen eine Datei zu machen wo Dataen hin
         
 Dieser Code holt sich aus der .json datei eine Reihe an einzelnen Buchstaben die zusammen ein Wort ergeben. Das Program drückt sie dann als Zahlen aus. Ich plane durch einen Algorytmus diese Zahlen zu Listen machen wo eine Liste ein Wort ergibt. Dies kann ich machen, weil das Program die Buchstaben nach dem ASCII (American Standard Code for Information Interchange) convertiert.
 
+### 25.09.2022 Louis Lemberg
+Ich habe mich jetzt erstmal dazu entschieden mir anzugucken, wie man mit tkinter in Python Programme schön designen kann. Dafür habe ich erstmal um die Anordnung von Elementen zu üben, ein TicTacToe Feld mit 9 Buttons erstellt. Als nächstes möchte ich dann ein erstes mögliches Desgin für einen Chatbot programmieren.
+
+<details>
+    <summary>TicTacToe Layout</summary>
+    
+``` 
+from tkinter import *
+
+window = Tk()
+window.title("TicTacToe Layout")
+
+button1 = Button(window, height=5, width=10, text="O")
+button2 = Button(window, height=5, width=10, text="X")
+button3 = Button(window, height=5, width=10, text="O")
+button4 = Button(window, height=5, width=10, text="X")
+button5 = Button(window, height=5, width=10, text="X")
+button6 = Button(window, height=5, width=10, text="O")
+button7 = Button(window, height=5, width=10, text="X")
+button8 = Button(window, height=5, width=10, text="O")
+button9 = Button(window, height=5, width=10, text="X")
+
+exit_button = Button(window, text="Exit", command=window.quit)
+
+button1.grid(row = 1, column = 1)
+button2.grid(row = 1, column = 2)
+button3.grid(row = 1, column = 3)
+button4.grid(row = 2, column = 1)
+button5.grid(row = 2, column = 2)
+button6.grid(row = 2, column = 3)
+button7.grid(row = 3, column = 1)
+button8.grid(row = 3, column = 2)
+button9.grid(row = 3, column = 3)
+
+exit_button.grid(row = 3, column = 4)
+
+window.mainloop()
+```
+</details>
+
 ### 26.09.2022 Jan Drewes
 Heute in der Stunde habe ich versucht die Liste von Zahlen nach Wörtern zu sortieren. Hierzu habe ich, den ASCII verwendet und ganz viele If-Statments. Dies hat dur mäßig funktioniert und ich werde daran noch zuhause arbeiten um es zum laufen zu kriegen.
 
+### 02.10.2022 Louis Lemberg
+In der vergangenen Woche habe ich mich mit dem möglichen Design für einen Chatbot programmiert. Dafür habe ich ein großes Textfeld, ein Eingabefeld und ein "Send"-Button in das window eingefügt. Als nächstes will ich dieses Design mit meinem Chatbot verbinden, den ich vor einigen Wochen programmiert hatte.
+
+<details>
+    <summary>TicTacToe Layout</summary>
+    
+``` 
+from tkinter import *
+
+window = Tk()
+window.title("Chatbot")
+
+background_color = "#17202A"
+background_color2 = "#98bee3"
+text_color = "#EAECEE"
+font = "Lastica 14"
+
+textfield = Text(window, bg=background_color, fg=text_color, font=font, width=60) 
+entrybox = Entry(window, bg="#2C3E50", fg=text_color, font=font, width=55)
+send_button = Button(window, text="Send", font=font, bg=background_color2, command=chat)
+
+textfield.grid(row=1, column=0, columnspan=2)
+entrybox.grid(row=2, column=0)
+send_button.grid(row=2, column=1)
+ 
+window.mainloop()
+```
+</details>
+
 ### 06.10.2022 Jan Drewes
 Nach dem ich letzte Woche auf diese Schwiegrigkeit gestoßen, habe ich mich in der Zeit zwischen den stunden daran gesetzt das Problem zu lösen. Ich habe es auch geschaft das Problem zu lösen. Da diese Lösen etwa komplitzierter ist und etwas länger ist werde ich sie hier nicht einfügen. Ich habe das gemacht um zuverstehen wie abkürzungen das machen. Im weiteren habe ich dann in der Stunde angefangen mir verschiedene möglichkeiten einen Chatbot zu programieren angeschaut. Um dann zu überlegen welche wir benutzten sollten.
+
+### 12.10.2022 Louis Lemberg
+In der letzten Woche habe ich den Code für meinen Chatbot nochmal überarbeitet. Ich habe einige neue Elemente (Fragen und Aufforderungen) eingebunden und natürlich danach alles mit dem Design zusammengeführt.
+
+<details>
+    <summary>TicTacToe Layout</summary>
+    
+``` 
+from tkinter import *
+
+def chat():
+    user_input = entrybox.get()
+
+    message = "You -> " + entrybox.get()
+    textfield.insert(END, "\n" + message)
+ 
+    if user_input == "hello" or user_input == "hi" or user_input == "hey":
+        textfield.insert(END, "\n" + "Bot -> Hello my friend, how can I help?")
+ 
+    elif user_input == "how are you":
+        textfield.insert(END, "\n" + "Bot -> I'm fine and you?")
+ 
+    elif user_input == "fine" or user_input == "i am good" or user_input == "i am fine":
+        textfield.insert(END, "\n" + "Bot -> That's nice! Is there anything else I can do for you?")
+
+    elif user_input == "how is the weather today?":
+        textfield.insert(END, "\n" + "Bot -> I'm not able to answer to this question but you could go to a window and look by yourself.")
+
+    elif user_input == "tell me a joke":
+        textfield.insert(END, "\n" + "Bot -> Did you hear about the guy who invented the knock-knock joke?" + "\n" + "Bot -> He won the “no-bell” prize.")
+ 
+    elif user_input == "goodbye" or user_input == "bye":
+        textfield.insert(END, "\n" + "Bot -> See you, have a nice day!")
+ 
+    else:
+        textfield.insert(END, "\n" + "Bot -> I'm sorry, I think I can't help you... I'm still in progress! Have a nice day!")
+ 
+    entrybox.delete(0, END)
+
+window = Tk()
+window.title("Chatbot")
+
+background_color = "#17202A"
+background_color2 = "#98bee3"
+text_color = "#EAECEE"
+font = "Lastica 14"
+
+textfield = Text(window, bg=background_color, fg=text_color, font=font, width=60) 
+entrybox = Entry(window, bg="#2C3E50", fg=text_color, font=font, width=55)
+send_button = Button(window, text="Send", font=font, bg=background_color2, command=chat)
+
+textfield.grid(row=1, column=0, columnspan=2)
+entrybox.grid(row=2, column=0)
+send_button.grid(row=2, column=1)
+ 
+window.mainloop()
+```
+</details>
+
+Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan und ich getrennt arbeiten mussten, sagen, dass ich nicht wirklich zufrieden bin. Durch die vielen Aktivitäten und die sehr langgehende Schule in Frankreich, habe ich nicht immer regelmäßig Zeit gefunden und war leider nie so richtig im Arbeitsflow. Ich werde jetzt dafür natürlich nach Absprache mit Jan alles nachzuholen, was nachzuholen ist und mich versuchen umso mehr einzubringen.
