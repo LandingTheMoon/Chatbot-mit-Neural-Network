@@ -304,14 +304,10 @@ Für die ganze Programmierung des Bots und des dahintersteckenden NeuralNetworks
 
 ### 07.11.2022
 Wir hatten letzte Stunde zwar den Code geschrieben, hatten aber keine Zeit ihn zu testen. Dies haben wir die Stunde getan und sind auf mehre Fehler gestoßen, die durch das Lösen vom ersten Fehler aufgeträten sind. Dieser Fehler war:
-
-<details>
-    <summary>Fehlercode</summary>
     
 ```
 RuntimeError: expected scalar type Long but found Int
 ```
-</details>
 
 Dieser Fehlercode weißt darauf hin das der Input im falschen tensor.type ist. Somit kammen wir nach langem Recherschieren auf diese Line Code, die Probleme gelöst hat.
 
