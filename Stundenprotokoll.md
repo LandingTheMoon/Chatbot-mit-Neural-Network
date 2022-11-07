@@ -301,3 +301,22 @@ Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan 
 ### 03.11.2022
 Heute war die erste Stunde in der wir beide zusammen an unserem Projekt gearbeitet haben. Wir standen direkt vor der Entscheidung, ob wir unseren Chatbot mit einem Movie Script oder anhand einer selbst geschriebenen Liste von möglichen Inputs und Responses trainieren wollen. Wir fanden beides sehr spannend, haben uns dann jedoch final für die zweite Variante mit der selbstgeschriebenen Liste entschieden. Damit haben wir dann angefangen den Bot für das "Training" vorzubereiten. Sodass wir vorraussichtlich in der nächsten Stunde einen ersten Test machen können.
 Für die ganze Programmierung des Bots und des dahintersteckenden NeuralNetworks benutzen wir folgendes Tutorial: https://www.python-engineer.com/posts/chatbot-pytorch/
+
+### 07.11.2022
+Wir hatten letzte Stunde zwar den Code geschrieben, hatten aber keine Zeit ihn zu testen. Dies haben wir die Stunde getan und sind auf mehre Fehler gestoßen, die durch das Lösen vom ersten Fehler aufgeträten sind. Dieser Fehler war:
+
+<details>
+    <summary>Fehlercode</summary>
+    
+'''
+RuntimeError: expected scalar type Long but found Int
+'''
+</details>
+
+Dieser Fehlercode weißt darauf hin das der Input im falschen tensor.type ist. Somit kammen wir nach langem Recherschieren auf diese Line Code, die Probleme gelöst hat.
+
+'''
+labels = labels.type(to.LongTensor)
+'''
+
+Labels ist hier bei die Variabel für den Input und der rest ändert den tensor.type, also wie der tensor hinterlegt ist und aussieht.
