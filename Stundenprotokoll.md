@@ -308,15 +308,15 @@ Wir hatten letzte Stunde zwar den Code geschrieben, hatten aber keine Zeit ihn z
 <details>
     <summary>Fehlercode</summary>
     
-'''
+```
 RuntimeError: expected scalar type Long but found Int
-'''
+```
 </details>
 
 Dieser Fehlercode weißt darauf hin das der Input im falschen tensor.type ist. Somit kammen wir nach langem Recherschieren auf diese Line Code, die Probleme gelöst hat.
 
-'''
+```
 labels = labels.type(to.LongTensor)
-'''
+```
 
 Labels ist hier bei die Variabel für den Input und der rest ändert den tensor.type, also wie der tensor hinterlegt ist und aussieht.
