@@ -1,0 +1,41 @@
+{"intents": [
+    {
+        "tag": "greetings",
+        "patterns": ["Hi", "Hello", "Howdy", "Goodday", "Hey", "Nice to see you"],
+        "responses": ["Hello. How are you?", "How are you?", "How can I help?"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["I'm out", "Bye", "Cya", "Have a good day"],
+        "responses": ["Goodbye", "Have a nice day", "Hope I could help"]
+    },
+    {
+        "tag": "age",
+        "patterns": ["how old are you?", "What is your age?", "When where you born"],
+        "responses": ["I am 23, and I was born in 1999"]
+    },
+    {
+        "tag": "jokes",
+        "patterns": ["tell me a joke"],
+        "responses": [
+            "What’s the best thing about Switzerland? > I don’t know, but the flag is a big plus.", 
+            "A woman in labour suddenly shouted, “Shouldn’t! Wouldn’t! Couldn’t! Didn’t! Can’t!” > “Don’t worry,” said the doctor. “Those are just contractions.”", 
+            "A couple sits on a sofa. He has foot odor and she has mouth odor. After a moment of awkward silence, she says, “Paul, I have to tell you something.” “No need,” Paul raises his hand, “it’s OK. I know you ate my socks.”", 
+            "Our employer invited us to a seminar called “Mobbing at the workplace”. I think I will skip this one. I'm already pretty good at it.",
+            "”Women really know how to hold a grudge. - My wife asked me to pass her a lip balm. And by mistake, I gave her a tube of Super Glue. - It’s been a month now and she’s still not speaking to me!",
+            "My friend talked me into lending her money for plastic surgery. I’ve been trying to get it back for months. Unfortunately I have no idea what she looks like these days.",
+            "Tonight I dreamt of a beautiful walk on a sandy beach. - At least that explains the footprints I found in the cat litter box this morning."
+        ]
+    },
+    {
+        "tag": "weather",
+        "patterns": ["how is the weather today?", "how is the weather?"],
+        "responses": ["I am not able to answer this, but you could go to your window and look by your self!"]
+    },
+    {
+        "tag": "datetime",
+        "patterns": ["What does the clock say?", "What time is it?", "What is the date?"],
+        "responses": []
+    }
+]
+}
