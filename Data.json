@@ -36,6 +36,11 @@
         "tag": "datetime",
         "patterns": ["What does the clock say?", "What time is it?", "What is the date?"],
         "responses": []
+    },
+    {
+        "tag": "test",
+        "patterns": ["test", "this is"],
+        "responses": ["Test succesful!"]
     }
 ]
 }
