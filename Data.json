@@ -76,6 +76,11 @@
         "tag": "maths",
         "patterns": ["What is"],
         "responses": []
+    },
+    {
+        "tag": "test",
+        "patterns": ["test", "this is"],
+        "responses": ["Test succesful!"]
     }
 ]
 }
