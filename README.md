@@ -110,7 +110,29 @@ test
 
 ### 1. data.json <a name="data"></a>
 
-test
+In der Datei data.json haben wir die ganzen Daten vorgeschrieben mit welcher der Chatbot am Ende trainiert. Dafür haben wir Listen nach folgendem Muster programmiert:
+
+```
+"intents": [
+    {
+        "tag": "",
+        "patterns": [""],
+        "responses": [""]
+    }
+]
+```
+
+Mit dem "tag" bestimmen wir einfach den Namen von dieser Gruppe von "patterns" und "responses". Diesen haben wir immer so gewählt, dass er beschreibt was danach definiert wird. In "patterns" geben wir dem Chatbot durch Keywords, anhand welcher der Bot später erkennt, dass der User auf diesen "tag" zugreifen will. In der Liste-"responses" sagen wir der Bot, wie er antworten soll, wenn er einen von den davor definierten "patterns" erkennt. Dies sieht dann zum Beispiel anhand des "tags": "greetings" so aus:
+
+```
+"intents": [
+    {
+        "tag": "test",
+        "patterns": ["test", "1,2,3"],
+        "responses": ["Test succesful!"]
+    }
+]
+```
 
 ### 2. nltk_utils.py <a name="nltk"></a>
 
