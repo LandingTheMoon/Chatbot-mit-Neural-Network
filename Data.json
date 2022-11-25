@@ -71,16 +71,6 @@
         "tag": "producer",
         "patterns": ["porducers", "programmers", "contributors"],
         "responses": ["I was made with the help of Jan Drewes and Louis Lemberg."]
-    },
-    {
-        "tag": "maths",
-        "patterns": ["What is"],
-        "responses": []
-    },
-    {
-        "tag": "test",
-        "patterns": ["test", "this is"],
-        "responses": ["Test succesful!"]
     }
 ]
 }
