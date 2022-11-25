@@ -94,6 +94,9 @@
             <td>
                 <a href="#3">3. Stunde vom Donnerstag, 17.11.2022</a>
             </td>
+            <td>
+                <a href=#4>4. Stunde vom Montag, den 22.11.2022
+            </td>
     </tr>
 </table>
 
@@ -389,12 +392,14 @@ window.mainloop()
 
 Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan und ich getrennt arbeiten mussten, sagen, dass ich nicht wirklich zufrieden bin. Durch die vielen Aktivitäten und die sehr langgehende Schule in Frankreich, habe ich nicht immer regelmäßig Zeit gefunden und war leider nie so richtig im Arbeitsflow. Ich werde jetzt dafür natürlich nach Absprache mit Jan alles nachzuholen, was nachzuholen ist und mich versuchen umso mehr einzubringen.
 
-## Stunde vom Donnerstag, 03.11.2022 <a name="1"></a>
+-------------------------------------------------------------------------------------------------------------------------
+
+## Stunde vom Donnerstag, den 03.11.2022 <a name="1"></a>
 
 Heute war die erste Stunde in der wir beide zusammen an unserem Projekt gearbeitet haben. Wir standen direkt vor der Entscheidung, ob wir unseren Chatbot mit einem Movie Script oder anhand einer selbst geschriebenen Liste von möglichen Inputs und Responses trainieren wollen. Wir fanden beides sehr spannend, haben uns dann jedoch final für die zweite Variante mit der selbstgeschriebenen Liste entschieden. Damit haben wir dann angefangen den Bot für das "Training" vorzubereiten. Sodass wir voraussichtlich in der nächsten Stunde einen ersten Test machen können. 
 Für die ganze Programmierung des Bots und des dahintersteckenden NeuralNetworks benutzen wir folgendes Tutorial: https://www.python-engineer.com/posts/chatbot-pytorch/
 
-## Stunde vom Montag, 07.11.2022 <a name="2"></a>
+## Stunde vom Montag, den 07.11.2022 <a name="2"></a>
 
 Wir hatten letzte Stunde zwar den Code geschrieben, hatten aber keine Zeit ihn zu testen. Dies haben wir die Stunde getan und sind auf mehre Fehler gestoßen, die durch das Lösen vom ersten Fehler aufgetreten sind. Dieser Fehler war:
     
@@ -410,6 +415,10 @@ labels = labels.type(to.LongTensor)
 
 Labels ist hierbei die Variabel für den Input und der Rest ändert den tensor.type, also wie der tensor hinterlegt ist und aussieht.
 
-## Stunde vom Donnerstag, 17.11.2022 <a name="3"></a>
+## Stunde vom Donnerstag, den 17.11.2022 <a name="3"></a>
 
-Heute haben wir das letzte entscheidende Programm geschrieben, durch welches wir nun wirklich mit dem Chatbot schreiben können. Dies hat alles sehr gut funktioniert, sodass wir angefangen haben den Chatbot mit einem Design zu verknüpfen. Dies hat leider noch nicht wirklich funktioniert, sodass Jan sich diesem Problem zu Hause nochmal widmen wird. Louis wird sich über das Wochenende mit dem Designen der GitHub-Projektseite beschäftigen. 
+Heute haben wir das letzte entscheidende Programm geschrieben, durch welches wir nun wirklich mit dem Chatbot schreiben können. Dies hat alles sehr gut funktioniert, sodass wir angefangen haben den Chatbot mit einem Design zu verknüpfen. Dies hat leider noch nicht wirklich funktioniert, sodass Jan sich diesem Problem zu Hause nochmal widmen wird. Louis wird sich über das Wochenende mit dem Designen der GitHub-Projektseite beschäftigen.
+
+## Stunde vom Montag, den 21.11.2022 <a name="4"></a>
+
+In den heutigen Stunden haben wir uns zunächst einmal gegenseitig unsere Ergebnisse vom Wochenende gezeigt. Dann hat Jan sich daran gesetzt den Code für die GUI nochmal zu verbessern, und Louis hat angefangen die data.json File, in welcher die Daten liegen mit welcher das Model trained, weiter auszubauen, das heißt einfach mehr mögliche Eingaben und Ausgaben hinzugefügt. Darüberhinaus haben wir dem Bot die kleine Extra-Funktion gegeben, dass er nun immer die aktuelle Uhrzeit und Datum nach Auffordern sagen kann. Dafür benutzen wir die datetime library von welcher die Uhrzeit und das Datum bekommen.
