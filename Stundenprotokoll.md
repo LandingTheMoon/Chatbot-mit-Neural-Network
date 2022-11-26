@@ -86,16 +86,24 @@
 <table align=center>
     <tr>
             <td>
-                <a href="#1">1. Stunde vom Donnerstag, 03.11.2022</a>
+                <a href="#1">1. Stunde vom Donnerstag, den 03.11.2022</a>
             </td>
             <td>
-                <a href="#2">2. Stunde vom Montag, 07.11.2022</a>
+                <a href="#2">2. Stunde vom Montag, den 07.11.2022</a>
             </td>
             <td>
-                <a href="#3">3. Stunde vom Donnerstag, 17.11.2022</a>
+                <a href="#3">3. Stunde vom Donnerstag, den 17.11.2022</a>
             </td>
+    </tr>
+    <tr>
             <td>
                 <a href=#4>4. Stunde vom Montag, den 22.11.2022
+            </td>
+            <td>
+                <a href="#5">5. Stunde vom Montag, den 28.11.2022</a>
+            </td>
+            <td>
+                <a href="#6">6. Stunde vom Donnerstag, den 01.12.2022</a>
             </td>
     </tr>
 </table>
@@ -422,3 +430,7 @@ Heute haben wir das letzte entscheidende Programm geschrieben, durch welches wir
 ## Stunde vom Montag, den 21.11.2022 <a name="4"></a>
 
 In den heutigen Stunden haben wir uns zunächst einmal gegenseitig unsere Ergebnisse vom Wochenende gezeigt. Dann hat Jan sich daran gesetzt den Code für die GUI nochmal zu verbessern, und Louis hat angefangen die data.json File, in welcher die Daten liegen mit welcher das Model trained, weiter auszubauen, das heißt einfach mehr mögliche Eingaben und Ausgaben hinzugefügt. Darüberhinaus haben wir dem Bot die kleine Extra-Funktion gegeben, dass er nun immer die aktuelle Uhrzeit und Datum nach Auffordern sagen kann. Dafür benutzen wir die datetime library von welcher die Uhrzeit und das Datum bekommen.
+
+## Stunde vom Montag, den 28.11.2022 <a name="5"></a>
+
+## Stunde vom Donnerstag, den 01.12.2022 <a name="6"></a>
