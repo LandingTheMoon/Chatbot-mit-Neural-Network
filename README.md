@@ -193,6 +193,8 @@ test
 <ol>
     <li>
         <a href="https://www.python-engineer.com/posts/chatbot-pytorch/">https://www.python-engineer.com/posts/chatbot-pytorch/</a>
+    </li>
+    <li>
         <a href="https://short-funny.com/hilarious-jokes.php">https://short-funny.com/hilarious-jokes.php</a>
     </li>
 </ol>
