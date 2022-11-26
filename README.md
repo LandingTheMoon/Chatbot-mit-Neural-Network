@@ -87,17 +87,19 @@ Bei der Ideenfindung haben wir uns am Anfang sehr schwer getan. Eigentlich hätt
 
 ## Die verwendeten Programme <a name="programme"></a>
 
+Im folgenden werden alle verwendeten Programme und Erweiterungen die maßgeblich zu unserem Projekt beigetragen haben vorstellen.
 ### 1. Python (Programmiersprache) <a name="python"></a>
 
-test
+Als Programmiersprache haben wir uns Python ausgesucht. Python ist im Vergleich zu anderen Programmiersprachen sehr einfach gehalten und eignet sich deshalb auch sehr gut für Anfänger. Jedoch kann man, wie man zum Beispiel an unserem Chatbot sehen kann, auch ziemliche komplexe Anwendungen in PYthon programmieren. Was unsere Entscheidung auch maßgeblich beeinflusst hat, war, dass wir beide schon ein gewisser Vorwissen in Python hatten.
 
 ### 2. VisualStudio Code (Programmierumgebung) <a name="vscode"></a>
 
-test
+Für die Programmierumgebung haben wir uns beide für VisualStudio Code, oder auch kurz VSC, entschieden, da wir beide schon sehr gute Erfahrungen damit gemacht haben. VSC ist für uns sehr übersichtlich, man kann sehr viele individuelle Erweiterungen installieren, es wird einem direkt eventuelle Tipp- bzw. Zeichenfehler angezeigt und ein weiterer entscheidener Faktor für uns war, dass VSC mit GitHub konvertibel ist und man so gemeinsam an einem Projekt direkt arbeiten kann.
 
 ### 3. Anaconda (Distributionssoftware/Interpreter) <a name="anaconda"></a>
 
-test
+Als Python-Intepreter haben wir uns für Anaconda entschieden. Der Hauptgrund war, dass Anaconda mit Pytorch konvertibel ist, und wir an Pytorch angewiesen waren. Aber auch allgemein hat Anaconda eine große Palette an PlugIns, die man installieren kann.
+Anaconda ist allgemein für die Entwicklung von Anwendungen mit großen Datenmengen, wozu unser Projekt gehört, ausgelegt.
 
 ### 4. Pytorch (Neural Network) <a name="pytorch"></a>
 
@@ -109,7 +111,7 @@ test
 
 ### 6. tkinter (GUI) <a name="tk"></a>
 
-test
+Tkinter ist eine Python-Erweiterung, welche wir dafür benutzt haben die GUI von unserem Chatbot zu designen. Tkinter war die erste Möglichkeit in Python GUI zu programmieren. Es gibt heutzutage natürlich auch andere Möglichkeiten für die GUI-Programmierung in Python, jedoch hat uns die Kompatibilität von Tkinter und Python am Ende überzeugt. 
 
 ## Der Chatbot <a name="chatbot"></a>
 
