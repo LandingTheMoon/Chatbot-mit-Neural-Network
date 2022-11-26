@@ -45,7 +45,7 @@
     {
         "tag": "datetime",
         "patterns": ["clock", "what", "time", "date"],
-        "responses": []
+        "responses": [""]
     },
     {
         "tag": "howareyou",
