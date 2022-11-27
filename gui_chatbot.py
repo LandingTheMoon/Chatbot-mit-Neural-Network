@@ -2,6 +2,7 @@ from tkinter import *
 import tkinter.messagebox
 from tkinter.scrolledtext import *
 from tkinter.ttk import *
+from PIL import Image, ImageTk
 import numpy as np
 from chat import get_response, get_tag, bot_name
 from datetime import datetime
@@ -41,15 +42,24 @@ def mainscreen():
     stylebutton = Style(chatgui)
     stylebutton.configure('log.TButton', height="2")
 
+    logoimage = Image.open("logo.png")
+    logoimageresize = logoimage.resize((125,90), Image.ANTIALIAS)
+    imageneu = ImageTk.PhotoImage(logoimageresize)
+    logo = Label(chatgui, image=imageneu)
+    logo.place(x=137, y=70)
+
     welcome = Label(chatgui, text="Welcome to our Chatbot!", font="Avenir 16", foreground="Red")
-    welcome.place(x=80, y=65)
+    welcome.place(x=80, y=35)
     welcome.config()
+
     loginButton = Button(text="Login", width="30", command=login, style='log.TButton')
     loginButton.place(x=90, y=175)
     loginButton.config()
+
     registerButton = Button(text="Register", width="30", command=register, style='log.TButton')
     registerButton.place(x=90, y=225)
     registerButton.config()
+
     Label(text="")
     info1 = Label(chatgui, text="Press 'Enter' or press the 'Submit' button to submit your Username \n Press 'Left Shift + Enter' or press the 'Exit' button to exit the Program")
     info1.place(x=5, y=300)
