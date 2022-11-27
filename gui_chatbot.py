@@ -35,13 +35,19 @@ def mainscreen():
     stylescrollbar = Style(chatgui)
     stylescrollbar.layout('arrowless.Vertical.TScrollbar', [('Vertical.Scrollbar.trough', {'children': [('Vertical.Scrollbar.thumb', {'expand': '1', 'sticky': 'nswe'})], 'sticky': 'ns'})])
     
-    welcome = Label(chatgui, text="Welcome to our Chatbot!", font="Avenir 16", fg="Red")
+    stylebutto2 = Style(chatgui)
+    stylebutto2.configure('red.TButton', height="1")
+
+    stylebutton = Style(chatgui)
+    stylebutton.configure('log.TButton', height="2")
+
+    welcome = Label(chatgui, text="Welcome to our Chatbot!", font="Avenir 16", foreground="Red")
     welcome.place(x=80, y=65)
     welcome.config()
-    loginButton = Button(text="Login", width="30", height="2", command=login)
+    loginButton = Button(text="Login", width="30", command=login, style='log.TButton')
     loginButton.place(x=90, y=175)
     loginButton.config()
-    registerButton = Button(text="Register", width="30", height="2", command=register)
+    registerButton = Button(text="Register", width="30", command=register, style='log.TButton')
     registerButton.place(x=90, y=225)
     registerButton.config()
     Label(text="")
@@ -62,8 +68,8 @@ def userselection():
 
     scrollbar = Scrollbar(chatgui, style='arrowless.Vertical.TScrollbar')
     scrollbar.place(x=380, y=6, height=390)
-    chatdisplay = Text(chatgui, bd=1, bg="black", width=50, height=8, font=("Avenir", 14), foreground="#FFFFFF")
-    chatdisplay.place(x=6, y=6, width=w-12, height=h-110)
+    chatdisplay = Text(chatgui, yscrollcommand=scrollbar.set, bd=1, bg="black", width=50, height=8, font=("Avenir", 14), foreground="#FFFFFF")
+    chatdisplay.place(x=6, y=6, width=w-26, height=h-110)
     chatdisplay.configure(cursor="arrow", state=DISABLED)
     info2 = Label(chatgui, text="Press 'Enter' or press the 'Enter' button to enter your message \n Press 'Left Shift + Enter' or press the 'Exit' button to exit the Program")
     info2.place(x=6, y=455)
@@ -77,13 +83,16 @@ def userselection():
 
     def delay():
         chatdisplay.configure(state=NORMAL)
-        chatdisplay.insert(END, f"This window will now be dertoyed. Please do not press anything.")
+        chatdisplay.insert(END, f"This window will now be dertoyed. Please do not press anything. \n")
+        chatdisplay.yview(END)
         chatdisplay.configure(cursor="arrow", state=DISABLED)
         chatgui.after(2500, quit)
 
     exit2 = Button(text="Exit", width=10, command=delay)
     exit2.place(x=310, y=425)
     chatgui.bind('<Shift_L><Return>', lambda event:delay())
+
+    web_input = ""
 
     def callback():
         inp = input.get()
@@ -108,13 +117,16 @@ def userselection():
                 chatdisplay.yview(END)
                 chatdisplay.configure(cursor="arrow", state=DISABLED)
             elif restag == "":
+                global web_input
                 web_input = inp
+                print(f'web_input: {web_input}')
                 chatdisplay.configure(state=NORMAL)
                 chatdisplay.insert(END, f'{bot_name}: {res} \n')
                 chatdisplay.yview(END)
                 chatdisplay.configure(cursor="arrow", state=DISABLED)
             elif restag == "yes":
                 webbrowser.open(url + web_input)
+                print(f'web_input: {web_input}')
                 chatdisplay.configure(state=NORMAL)
                 chatdisplay.insert(END, f'{bot_name}: Please wait a moment! \n')
                 chatdisplay.yview(END)
@@ -159,11 +171,12 @@ def register():
     Label(registerScreen, text="Username").pack()
     username_entry = Entry(registerScreen, textvariable=username)
     username_entry.pack()
+    username_entry.focus()
     Label(registerScreen, text="Password").pack()
     password_entry = Entry(registerScreen, textvariable=password, show="*")
     password_entry.pack()
     Label(registerScreen, text="").pack()
-    Button(registerScreen, text="Register", width="10", height="1", command=registerUser).pack()
+    Button(registerScreen, text="Register", width="10", command=registerUser, style='reg.TButton').pack()
     registerScreen.bind('<Return>', lambda event:registerUser())
 
 def registerUser():
@@ -203,11 +216,12 @@ def login():
     Label(loginScreen, text="Username").pack()
     username_entry1 = Entry(loginScreen, textvariable=username_verify)
     username_entry1.pack()
+    username_entry1.focus()
     Label(loginScreen, text="Password").pack()
     password_entry1 = Entry(loginScreen, textvariable=password_verify, show = "*")
     password_entry1.pack()
     Label(loginScreen, text="").pack()
-    Button(loginScreen, text="Login", width="10", height="1", command=loginUser).pack()
+    Button(loginScreen, text="Login", width="10", command=loginUser, style='reg.TButton').pack()
     loginScreen.bind('<Return>', lambda event:loginUser())
 
 def loginUser():
