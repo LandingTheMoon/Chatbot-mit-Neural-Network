@@ -433,4 +433,6 @@ In den heutigen Stunden haben wir uns zunächst einmal gegenseitig unsere Ergebn
 
 ## Stunde vom Montag, den 28.11.2022 <a name="5"></a>
 
+Heute haben wir uns trotz Ausfall in der Schule zusammengesetzt und haben die Programmierung final abgeschlossen. Wir haben uns ebenfalls am Wochenende über Discord getroffen und weitere Erweiterungen hinzugefügt. So kann unser Chatbot nun, falls er etwas nicht erkennt, dieses nach kurzem Nachfragen im Internet suchen. Dafür nutzen wir das webbrowser-PlugIn. Zudem haben wir ein Login und Register System hinzugefügt. Dieses funktioniert so, dass nach jeder Registrierung eine .txt-Datei erstellt wird, mit dem Username und Password. Beim LogIn wird dann überprüft, ob es diese Kombination von Username und Passwort auch wirklich gibt. Weitergehend haben wir ein Logo für unseren Chatbot erstellt und allgemein ein bisschen das Design durch Farben verschönert. Jetzt müssen wir nur noch die letzten Texte auf der Projektseite schreiben und die letzten Dateien kommentieren.
+
 ## Stunde vom Donnerstag, den 01.12.2022 <a name="6"></a>
