@@ -45,7 +45,7 @@ def get_response(msg):                                              #Diese Funkt
             if tag == intent["tag"]:                                #Erzeugt eine zufällige Antwort von dem vorhergesagtem Tag
                 return random.choice(intent['responses'])
     else:
-        return "I do not understand. Do you want search?"           #Antortet falls kein Tag gefunden worden ist
+        return "I do not understand. \nDo you want me to search that?"           #Antortet falls kein Tag gefunden worden ist
 
 def get_tag(msg):                                                   #Macht das gleiche wie get_response nur das es den vorhergesagten Tag weider gibt
 
