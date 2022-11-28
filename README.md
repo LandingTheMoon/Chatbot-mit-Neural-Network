@@ -1,5 +1,10 @@
 <h1 align=center>Chatbot mit Neural Network - Projektseite</h1>
-<h3 align=center>von Jan Drewes (@LandingTheMoon) & Louis Lemberg (@MindOfUs)<h3>
+<div align=center>
+    <img src='logo.png', height="200", border="5"></img>
+</div>
+<h3 align=center>von Jan Drewes (@LandingTheMoon) & 
+Louis Lemberg (@MindOfUs)</h3>
+<h3>----------------------------------------------------------------------------------------------------------------</h3>
 
 ## Übersicht
 
@@ -175,8 +180,27 @@ Die letzte Funktion in nltk_utils.py konvertiert die Eingabe vom User (Satz) in 
 
 ### 3. model.py <a name="model"></a>
 
-Mit diesem Programm wird nun das 'Model' mit Hilfe von <a href="#pytorch">pytorch</a> erstellt. Dafür erstellen wir dessen zweischichtiges Neural Network.
+Mit diesem Programm wird nun das 'Model' bzw. das Neural Network mit Hilfe von <a href="#pytorch">pytorch</a> erstellt. Dafür haben wir eine class mit folgenden zwei Funktionen drin:
 
+```
+def __init__(self, input_size, hidden_size, num_classes):  
+        super(NeuralNet, self).__init__()
+        self.l1 = nn.Linear(input_size, hidden_size)
+        self.l2 = nn.Linear(hidden_size, hidden_size)
+        self.l3 = nn.Linear(hidden_size, num_classes)
+        self.relu = nn.ReLU()
+```
+Diese erste Funktion tut nichts anderes als das Neural Network aufzubauen bzw. erst einmal zu erschaffen.
+```
+def forward(self, x:                                          
+        out = self.l1(x)
+        out = self.relu(out)
+        out = self.l2(out)
+        out = self.relu(out)
+        out = self.l3(out)
+        return out
+```
+Diese zweite Funktion schickt die ganzen Daten durch jedes einzelne Layer des Neural Networks durch.
 ### 4. train.py <a name="train"></a>
 
 In diesem Programm bringen wir nun alles was wir vorher in den anderen Programmen bereits festgelegt haben zusammen, und lassen den Chatbot lernen. 
