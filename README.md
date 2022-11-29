@@ -203,7 +203,100 @@ def forward(self, x:
 Diese zweite Funktion schickt die ganzen Daten durch jedes einzelne Layer des Neural Networks durch.
 ### 4. train.py <a name="train"></a>
 
-In diesem Programm bringen wir nun alles was wir vorher in den anderen Programmen bereits festgelegt haben zusammen, und lassen den Chatbot lernen. 
+In diesem Programm bringen wir nun alles was wir vorher in den anderen Programmen bereits festgelegt haben zusammen, und lassen den Chatbot lernen. Dafür importieren wir zunächst alle möglichen Librarys, welche wir für die Umsetzung brauchen, und die Funktionen, welche wir in <a href="#model">model.py</a> und <a href="#nltk">nltk_utils.py</a> definiert haben.
+
+```
+data_json = 'Data.json'
+
+with open(data_json, 'r', encoding='utf-8') as file:                    
+    data = json.loads(file.read())
+
+all_words = []
+tags = []
+xy = []
+for intent in data['intents']:                                      
+    tag = intent['tag']
+    tags.append(tag)
+    for pattern in intent['patterns']:                              
+        w = tokenize(pattern)
+        all_words.extend(w)
+        xy.append((w, tag))                                         
+ignore_words = ['?', '.', '!']                                      
+all_words = [stem(w) for w in all_words if w not in ignore_words]   
+all_words = sorted(set(all_words))                                  
+tags = sorted(set(tags))
+```
+
+Zunächst öffnet das Programm unsere <a href="#data">Data.json</a> und liest dessen Inhalt. Dann erstellen wir drei Listen aus der Data.json, eine mit den 'tags', eine mit den 'patterns' und die letzte mit den Wörtern aus 'patterns' und den dazugehörigen 'tags'. Dann nutzen wir die 'stem'-Funktion, um diese dann allen Wörtern auszuführen. Darauf sortiert das Programm alle Wörter, sowie 'tags'. Diesen lassen wir uns dann zur Kontrolle noch einmal in die Konsole printen.
+
+```
+X_train = []
+y_train = []
+for (pattern_sentence, tag) in xy:                                      
+    bag = bag_of_words(pattern_sentence, all_words)                  
+    X_train.append(bag)
+    labels = tags.index(tag)
+    y_train.append(labels)
+
+X_train = np.array(X_train)                                         
+y_train = np.array(y_train)
+```
+
+Dann erstellt es drei weitere Listen, jedoch diesmal mit Hilfe der bag_of_words-Funktion aus <a href="#nltk">nltk_utils.py</a>, zudem konvertiert das Programm darauf die Listen zu arrays. Diese beiden Aktionen sind notwendig, denn nur mit diesen Daten kann der Chatbot tatsächlich trainieren.
+
+Zunächst werden einige Variablen festgelegt, welche für das Neural Network gelten. Zudem wird eine Klasse definiert und erstellt, in welcher die ganze Trainingsdata gespeichert wird.
+
+```
+train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)     
+
+model = NeuralNet(input_size, hidden_size, output_size)             
+
+criterion = nn.CrossEntropyLoss()                                   
+optimizer = to.optim.Adam(model.parameters(), lr=learning_rate)
+```
+
+Nun werden einige weitere Dinge definiert. Zunächst einen Dataloader, welcher wie der Name schon sagt die ganze Data liest und in der Variable train_loader speichert. Dann legen wir das Neural Network anhand der vorher definierten Variablen fest und speichern dies wiederum alles in einer Variable model. 
+Dann legen wir noch criterion und optimizer fest, ersteres bestimmt den 'Loss' beim Training und letzteres stellt schlussendlich sicher, dass der Chatbot lernt.
+
+```
+for epoch in range(num_epochs):                                     
+    for (words, labels) in train_loader:
+        words = words
+        labels = labels
+        print(labels.type())
+        outputs = model(words)
+        labels = labels.type(to.LongTensor)
+        loss = criterion(outputs, labels)
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+    
+    if (epoch+1) % 100 == 0:                                        
+        print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+```
+
+Jetzt lassen wir den Chatbot schließlich trainieren. Dabei geht er die komplette Data durch und rechnet den Loss für jeden 'epoch' aus.
+Nachdem er fertig ist, gibt er noch den kompletten 'Loss' aus.
+
+```
+data = {                                                            
+    "model_state": model.state_dict(),
+    "input_size": input_size,
+    "hidden_size": hidden_size,
+    "output_size": output_size,
+    "all_words": all_words,
+    "tags": tags
+}
+```
+
+Dann definieren wir die benutzen Variablen nochmal neu, um sie dann später in einem anderen Programm nochmal zu verwenden.
+
+```
+FILE = "data.pth"                                                   
+to.save(data, FILE)
+```
+
+Am Ende wird nun die gesamte Trainingsdata in der Datei data.pth im aktuellen path gespeichert.
 
 ### 5. chat.py <a name="chat"></a>
 

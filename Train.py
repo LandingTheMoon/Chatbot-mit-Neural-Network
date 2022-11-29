@@ -33,8 +33,8 @@ print("xy", xy)
 
 X_train = []
 y_train = []
-for (pattern_sentence, tag) in xy:                                  #Erstellt eine Liste aus allen Wörter und allen Patterns
-    bag = bag_of_words(pattern_sentence, all_words)                 #Und eine Liste aus allen Tags            
+for (pattern_sentence, tag) in xy:                                  #Erstellt eine Liste aus allen Wörter und allen Patterns mit Hilfen der bag_of_words-Funktion
+    bag = bag_of_words(pattern_sentence, all_words)                 #Und eine Liste aus allen Tags ebenfalls mit Hilfe der bag_of_words-Funktion
     X_train.append(bag)
     labels = tags.index(tag)
     y_train.append(labels)
