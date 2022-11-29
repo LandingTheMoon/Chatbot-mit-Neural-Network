@@ -1,0 +1,96 @@
+{"intents": [
+    {
+        "tag": "test",
+        "patterns": ["test", "1,2,3"],
+        "responses": ["Test succesful!"]
+    },
+    {
+        "tag": "greetings",
+        "patterns": ["Hi", "Hello", "Howdy", "Goodday", "Hey", "Nice to see you"],
+        "responses": ["Hello. How are you?", "How are you?", "How can I help?"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["out", "Bye", "Cya", "good day"],
+        "responses": ["Goodbye", "Have a nice day", "Hope I could help"]
+    },
+    {
+        "tag": "age",
+        "patterns": ["old", "your age", "were you born"],
+        "responses": ["I am 23, and I was born in 1999"]
+    },
+    {
+        "tag": "name",
+        "patterns": ["your", "name", "who are you"],
+        "responses": ["My name is Jeffrey!"]
+    },
+    {
+        "tag": "jokes",
+        "patterns": ["tell", "joke", "gag", "laugh"],
+        "responses": [
+            "What’s the best thing about Switzerland? > I don’t know, but the flag is a big plus.", 
+            "A woman in labour suddenly shouted, “Shouldn’t! Wouldn’t! Couldn’t! Didn’t! Can’t!” > “Don’t worry,” said the doctor. “Those are just contractions.”", 
+            "A couple sits on a sofa. He has foot odor and she has mouth odor. After a moment of awkward silence, she says, “Paul, I have to tell you something.” “No need,” Paul raises his hand, “it’s OK. I know you ate my socks.”", 
+            "Our employer invited us to a seminar called “Mobbing at the workplace”. I think I will skip this one. I'm already pretty good at it.",
+            "”Women really know how to hold a grudge. - My wife asked me to pass her a lip balm. And by mistake, I gave her a tube of Super Glue. - It’s been a month now and she’s still not speaking to me!",
+            "My friend talked me into lending her money for plastic surgery. I’ve been trying to get it back for months. Unfortunately I have no idea what she looks like these days.",
+            "Tonight I dreamt of a beautiful walk on a sandy beach. - At least that explains the footprints I found in the cat litter box this morning."
+        ]
+    },
+    {
+        "tag": "weather",
+        "patterns": ["how", "weather", "today", "in the moment"],
+        "responses": ["I am not able to answer this, but you could go to your window and look by your self!"]
+    },
+    {
+        "tag": "datetime",
+        "patterns": ["clock", "what", "time", "date"],
+        "responses": [""]
+    },
+    {
+        "tag": "feelings+",
+        "patterns": ["good", "fine", "okay", "ok"],
+        "responses": ["That's great!"]
+    },
+    {
+        "tag": "feelings-",
+        "patterns": ["not good", "idk", "don't know", "bad", "pain", "sad"],
+        "responses": ["I'm sorry for you!", "That's not good! I hope you feel better soon."]
+    },
+    {
+        "tag": "music",
+        "patterns": ["music", "favorite music", "song", "favorite song"],
+        "responses": ["My song tip for you is 'I want it that way' by the Backstreet Boys.", "I am not able to play music, I'm sorry! But my tip for you is to listen to the Backstreet Boys"]
+    },
+    {
+        "tag": "creators",
+        "patterns": ["producers", "programmers", "contributors", "creators", "who made"],
+        "responses": ["I was made with the help of \nJan Drewes and Louis Lemberg."]
+    },
+    {
+        "tag": "yes",
+        "patterns": ["yes", "yeah", "please"],
+        "responses": [""]
+    },
+    {
+        "tag": "no",
+        "patterns": ["no"],
+        "responses": [""]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["thanks", "thank you"],
+        "responses": ["You're welcome!", "It was a pleasure for me to help you!"]
+    },
+    {
+        "tag": "botfeeling",
+        "patterns": ["how are you", "you feel", "your day been"],
+        "responses": ["I feel fine. How about you?", "Great!", "I am not feeling to good."]
+    },
+    {
+        "tag": "why",
+        "patterns": ["why"],
+        "responses": ["I do not know why.", "Maybe ask my creators.", "My computational power is not enough to answer that"]
+    }
+]
+}
