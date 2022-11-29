@@ -1,6 +1,6 @@
 <h1 align=center>Chatbot mit Neural Network - Projektseite</h1>
 <div align=center>
-    <img src='logo.png', height="200", border="5"></img>
+    <img src='Der Chatbot/logo.png', height="200", border="5"></img>
 </div>
 <h3 align=center>von Jan Drewes (@LandingTheMoon) & 
 Louis Lemberg (@MindOfUs)</h3>
