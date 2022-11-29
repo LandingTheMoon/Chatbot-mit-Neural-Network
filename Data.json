@@ -21,7 +21,7 @@
     },
     {
         "tag": "name",
-        "patterns": ["your", "name"],
+        "patterns": ["your", "name", "who are you"],
         "responses": ["My name is Jeffrey!"]
     },
     {
@@ -55,7 +55,7 @@
     {
         "tag": "feelings-",
         "patterns": ["not good", "idk", "don't know", "bad", "pain", "sad"],
-        "responses": ["I'm sorry for you! Is there anythinhg I could do for you", "That's not good! Do you need help?"]
+        "responses": ["I'm sorry for you!", "That's not good! I hope you feel better soon."]
     },
     {
         "tag": "music",
@@ -63,9 +63,9 @@
         "responses": ["My song tip for you is 'I want it that way' by the Backstreet Boys.", "I am not able to play music, I'm sorry! But my tip for you is to listen to the Backstreet Boys"]
     },
     {
-        "tag": "producer",
-        "patterns": ["porducers", "programmers", "contributors"],
-        "responses": ["I was made with the help of Jan Drewes and Louis Lemberg."]
+        "tag": "creators",
+        "patterns": ["producers", "programmers", "contributors", "creators", "who made"],
+        "responses": ["I was made with the help of \nJan Drewes and Louis Lemberg."]
     },
     {
         "tag": "yes",
@@ -73,9 +73,24 @@
         "responses": [""]
     },
     {
+        "tag": "no",
+        "patterns": ["no"],
+        "responses": [""]
+    },
+    {
         "tag": "thanks",
         "patterns": ["thanks", "thank you"],
         "responses": ["You're welcome!", "It was a pleasure for me to help you!"]
+    },
+    {
+        "tag": "botfeeling",
+        "patterns": ["how are you", "you feel", "your day been"],
+        "responses": ["I feel fine. How about you?", "Great!", "I am not feeling to good."]
+    },
+    {
+        "tag": "why",
+        "patterns": ["why"],
+        "responses": ["I do not know why.", "Maybe ask my creators.", "My computational power is not enough to answer that"]
     }
 ]
 }

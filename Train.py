@@ -64,8 +64,8 @@ train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True) 
 
 model = NeuralNet(input_size, hidden_size, output_size)             #Setzt das Model fest
 
-criterion = nn.CrossEntropyLoss()                                   #Erstellt den Optimizer
-optimizer = to.optim.Adam(model.parameters(), lr=learning_rate)
+criterion = nn.CrossEntropyLoss()                                   #Criterion rechnet den Loss
+optimizer = to.optim.Adam(model.parameters(), lr=learning_rate)     #Ermöglicht den fortschritt beim lernen
 
 for epoch in range(num_epochs):                                     #Sagt dem NeuralNetwork wie es die Iterations machen soll und caluliert den Loss
     for (words, labels) in train_loader:
