@@ -1,6 +1,6 @@
 <h1 align=center>Chatbot mit Neural Network - Projektseite</h1>
 <div align=center>
-    <img src='logo.png', height="200", border="5"></img>
+    <img src='Der Chatbot/logo.png', height="200", border="5"></img>
 </div>
 <h3 align=center>von Jan Drewes (@LandingTheMoon) & 
 Louis Lemberg (@MindOfUs)</h3>
@@ -67,6 +67,9 @@ Louis Lemberg (@MindOfUs)</h3>
         </ol>
     </li>
     <li>
+        <a href="#ausführen">Wie führt man den Chatbot aus?</a>
+    </li>
+    <li>
         <a href="Stundenprotokoll.md">Stundenprotokoll</a>
     </li>
     <li>
@@ -109,11 +112,12 @@ Anaconda ist allgemein für die Entwicklung von Anwendungen mit großen Datenmen
 
 ### 4. Pytorch (Neural Network) <a name="pytorch"></a>
 
-test
+Pytorch ist ein Framework, welches für Machine Learning genutzt wird. Es arbeitet dabei sehr schnell und hat allgemein eine sehr benutzerfreundliche Oberfläche. Was uns dazu verleitet hat, Pytorch zu verwenden. 
+Pytorch ist auch allgemein bei großen Unternehmen sehr beliebt und wird dort vor allem für die Entwicklung künstlicher Intelligenzen, für Datenwissenschaften und für Forschung genutzt.
 
 ### 5. NLTK (Natural Language Toolkit) <a name="nltk"></a>
 
-test
+NLTK ist ein Tool zur Verarbeitung von natürlicher Sprache in Computersprache. NLTK verarbeitet also in unserem Fall unsere Data, die wir dem Chatbot zum lernen geben, in gewisse Algorithmen, womit das Programm dann arbeiten kann. 
 
 ### 6. tkinter (GUI) <a name="tk"></a>
 
@@ -351,6 +355,10 @@ Dann haben wir noch eine weiter Funktion get_tag in chat.py, welche exakt das gl
 
 test
 
+## Wie führt man den Chatbot aus? <a name="ausführen"></a>
+
+Um unseren Chatbot zum Laufen zu bekommen, muss man sich zunächst alle Dateien importieren. Dann führt man zuerst <a href="#train">train.py</a> aus, damit der Chatbot erst einmal von der Data lernt. Daraufhin muss man dann nur noch <a href="#gui">gui_chatbot.py</a> ausführen, und der Chatbot sollte starten und funktionieren. Natürlich muss man sich dann zunächst eine Konto erstellen, aber nach erfolgreicher Registrierung und LogIn sollte man dann mit dem Chatbot reden können.
+
 ## Quellen <a name="sources"></a>
 
 <ol>
@@ -360,7 +368,18 @@ test
     <li>
         <a href="https://short-funny.com/hilarious-jokes.php">https://short-funny.com/hilarious-jokes.php</a>
     </li>
+    <li>
+        <a href="https://www.alexanderthamm.com/de/data-science-glossar/pytorch/">https://www.alexanderthamm.com/de/data-science-glossar/pytorch/</a>
+    </li>
+    <li>
+        <a href="https://www.python-lernen.de/webbrowser-mit-python-nutzen.htm">https://www.python-lernen.de/webbrowser-mit-python-nutzen.htm</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/watch?v=Xt6SqWuMSA8&list=WL&index=2">https://www.youtube.com/watch?v=Xt6SqWuMSA8&list=WL&index=2</a>
+    </li>
 </ol>
+
+Alle Links wurden zuletzt erfolgreich am 01.12.2022 um --.-- Uhr geöffnet.
 
 ## Eigenständigkeitserklärung <a name="eigen"></a>
 
