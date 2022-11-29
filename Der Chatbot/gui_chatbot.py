@@ -48,7 +48,7 @@ def mainscreen():
     stylebutton = Style(chatgui)
     stylebutton.configure('log.TButton', background=bg_color2, height="2")
 
-    logoimage = Image.open("logo.png")
+    logoimage = Image.open("Der Chatbot/logo.png")
     logoimageresize = logoimage.resize((125,90), Image.ANTIALIAS)
     imageneu = ImageTk.PhotoImage(logoimageresize)
     logo = Label(chatgui, image=imageneu)
