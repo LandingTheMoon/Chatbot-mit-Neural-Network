@@ -4,7 +4,7 @@
 </div>
 <h3 align=center>von Jan Drewes (@LandingTheMoon) & 
 Louis Lemberg (@MindOfUs)</h3>
-<h3>----------------------------------------------------------------------------------------------------------------</h3>
+<h3>----------------------------------------------------------------------</h3>
 
 ## Übersicht
 
@@ -300,7 +300,52 @@ Am Ende wird nun die gesamte Trainingsdata in der Datei data.pth im aktuellen pa
 
 ### 5. chat.py <a name="chat"></a>
 
-test
+Diese Datei ist für die eigentliche Technik hinter dem eigentlichen Chatvorgang mit dem Chatbot am Ende notwendig.
+Zuerst müssen wir auch hier alle nötigen Librarys importen. Dann öffnen und lesen wir wieder die <a href="#data">Data.json</a>-Datei, nun öffnen und lesen wir aber noch zusätzlich die 'data.pth'-Datei, welche ja unsere Trainingsdata enthält. Zudem holt sich das Programm die Variablen und die dazugehörigen Parameter, welche wir am Ende von <a href="#train">train.py</a> definiert haben.
+
+```
+model = NeuralNet(input_size, hidden_size, output_size)
+model.load_state_dict(model_state)                                 
+model.eval()
+```
+
+Dann laden wir so ähnlich wie in <a href="#train">train.py</a> auch schon das Model bzw. den Chatbot anhand den vorher festegelegten Variablen.
+
+```
+bot_name = "Jeffrey" 
+```
+
+Nun legen wir den Namen von unserem Chatbot fest. Wir haben ihn auf den Namen "Jeffrey" getauft.
+
+```
+def get_response(msg):                                              
+    sentence = tokenize(msg)                                        
+    X = bag_of_words(sentence, all_words)                           
+    X = X.reshape(1, X.shape[0])                                    
+    X = torch.from_numpy(X)                                         
+
+    output = model(X)                                               
+    _, predicted = torch.max(output, dim=1)                         
+
+    tag = tags[predicted.item()]                                    
+
+    probs = torch.softmax(output, dim=1)                            
+    prob = probs[0][predicted.item()]
+
+    if prob.item() > 0.75:                                          
+        for intent in intents['intents']:                           
+            if tag == intent["tag"]:                                
+                return random.choice(intent['responses'])
+    else:
+        return "I do not understand. \nDo you want me to search that?" 
+```
+
+Diese Funktion gibt eine Response auf die Eingabe vom User aus. Dafür wird zuerst die Eingabe 'tokenized'. Damit wird dann eine Liste erstellt, die im folgenden noch durch die 'reshape'-Funktion umgeformt wird. Daraus wiederum wird ein Tensor erstellt, welches in pytorch wie ein normaler Array ist.
+Dann lässt das Programm diesen Tensor durch das Model laufen und definiert daraufhin die Predicition vom Input. Danach holt das Programm sich den Tag aus dieser Predicition und rechnet die Wahrscheinlichkeit aus, dass dies die richtige Prediction ist. 
+Nun guckt das Programm, ob die Wahrscheinlichkeit größer als 0,75 ist, und falls dies der Fall ist, sucht er alle 'tags' ab, und guckt, ob der 'tag' von der Prediction in <a href="#data">Data.json</a>, falls dies der Fall ist, gibt er eine zufällige 'response' aus.
+Falls die Wahrscheinlichkeit kleiner als 0,75 ist, gibt er die Nachricht "I do not understand. Do you want me to search that?" aus.
+
+Dann haben wir noch eine weiter Funktion get_tag in chat.py, welche exakt das gleiche gemacht, wie die vorher genannte Funktion, jedoch gibt diese am Ende den 'tag' aus statt einer 'response'.
 
 ### 6. gui_chatbot.py <a name="gui"></a>
 
