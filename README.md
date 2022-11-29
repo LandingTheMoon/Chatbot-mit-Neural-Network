@@ -368,7 +368,18 @@ Um unseren Chatbot zum Laufen zu bekommen, muss man sich zunächst alle Dateien 
     <li>
         <a href="https://short-funny.com/hilarious-jokes.php">https://short-funny.com/hilarious-jokes.php</a>
     </li>
+    <li>
+        <a href="https://www.alexanderthamm.com/de/data-science-glossar/pytorch/">https://www.alexanderthamm.com/de/data-science-glossar/pytorch/</a>
+    </li>
+    <li>
+        <a href="https://www.python-lernen.de/webbrowser-mit-python-nutzen.htm">https://www.python-lernen.de/webbrowser-mit-python-nutzen.htm</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/watch?v=Xt6SqWuMSA8&list=WL&index=2">https://www.youtube.com/watch?v=Xt6SqWuMSA8&list=WL&index=2</a>
+    </li>
 </ol>
+
+Alle Links wurden zuletzt erfolgreich am 01.12.2022 um --.-- Uhr geöffnet.
 
 ## Eigenständigkeitserklärung <a name="eigen"></a>
 
