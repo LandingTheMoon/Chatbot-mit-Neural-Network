@@ -109,11 +109,12 @@ Anaconda ist allgemein für die Entwicklung von Anwendungen mit großen Datenmen
 
 ### 4. Pytorch (Neural Network) <a name="pytorch"></a>
 
-test
+Pytorch ist ein Framework, welches für Machine Learning genutzt wird. Es arbeitet dabei sehr schnell und hat allgemein eine sehr benutzerfreundliche Oberfläche. Was uns dazu verleitet hat, Pytorch zu verwenden. 
+Pytorch ist auch allgemein bei großen Unternehmen sehr beliebt und wird dort vor allem für die Entwicklung künstlicher Intelligenzen, für Datenwissenschaften und für Forschung genutzt.
 
 ### 5. NLTK (Natural Language Toolkit) <a name="nltk"></a>
 
-test
+NLTK ist ein Tool zur Verarbeitung von natürlicher Sprache in Computersprache. NLTK verarbeitet also in unserem Fall unsere Data, die wir dem Chatbot zum lernen geben, in gewisse Algorithmen, womit das Programm dann arbeiten kann. 
 
 ### 6. tkinter (GUI) <a name="tk"></a>
 
