@@ -67,6 +67,9 @@ Louis Lemberg (@MindOfUs)</h3>
         </ol>
     </li>
     <li>
+        <a href="#ausführen">Wie führt man den Chatbot aus?</a>
+    </li>
+    <li>
         <a href="Stundenprotokoll.md">Stundenprotokoll</a>
     </li>
     <li>
@@ -351,6 +354,10 @@ Dann haben wir noch eine weiter Funktion get_tag in chat.py, welche exakt das gl
 ### 6. gui_chatbot.py <a name="gui"></a>
 
 test
+
+## Wie führt man den Chatbot aus? <a name="ausführen"></a>
+
+Um unseren Chatbot zum Laufen zu bekommen, muss man sich zunächst alle Dateien importieren. Dann führt man zuerst <a href="#train">train.py</a> aus, damit der Chatbot erst einmal von der Data lernt. Daraufhin muss man dann nur noch <a href="#gui">gui_chatbot.py</a> ausführen, und der Chatbot sollte starten und funktionieren. Natürlich muss man sich dann zunächst eine Konto erstellen, aber nach erfolgreicher Registrierung und LogIn sollte man dann mit dem Chatbot reden können.
 
 ## Quellen <a name="sources"></a>
 
