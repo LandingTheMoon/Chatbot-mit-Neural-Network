@@ -4,7 +4,7 @@
 </div>
 <h3 align=center>von Jan Drewes (@LandingTheMoon) & 
 Louis Lemberg (@MindOfUs)</h3>
-<h3>----------------------------------------------------------------------</h3>
+
 
 ## Übersicht
 
