@@ -4,7 +4,7 @@ import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
-data_json = 'Der Chatbot/Data.json'
+data_json = 'Data.json'
 
 with open(data_json, 'r', encoding='utf-8') as file:                #Lädt Data.JSON
     intents = json.loads(file.read())

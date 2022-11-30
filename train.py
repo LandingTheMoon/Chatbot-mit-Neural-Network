@@ -8,7 +8,7 @@ import nltk
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize, stem
 
-data_json = 'Der Chatbot/Data.json'
+data_json = 'Data.json'
 
 with open(data_json, 'r', encoding='utf-8') as file:                #Lädt die JSON-Datei
     data = json.loads(file.read())
