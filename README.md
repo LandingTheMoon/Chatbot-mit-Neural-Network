@@ -479,10 +479,69 @@ mainscreen()
 
 Diese letzte Zeile Code ist die Wichtigste, denn diese führt die Funktion 'mainscreen' aus und startet somit das komplette Programme.
 
-### userselection()
+### def userselection()
 
+Diese Funktion ist die Verknüpfung zwischen der chat.py Datei und dieser GUI Datei und wird durch ein erfolgreiches Login ausgeführt. Innerhalb dieser Funktion gibt es nochmal zwei weitere Funktionen. Vor diesen anderen beiden Funktionen, wird erst einmal der Username vom erfolgreichen Login in eine Variable gepackt. Dann wird der Mainscreen in den Chatbotscreen umgewandelt. Die Login und Registrierungs-Buttons werden entfernt, und die Scrollbar, das Entry-Feld und das Chatdisplay werden hinzugefügt. Zudem wird noch ein Enter-Button zum Abschicken und eine Label für die Erklärung zum Nachrichten schicken und für den Exit hinzugefügt. Außerdem wird der Input vom User in eine Variable gepackt.
 
+```
+def callback():                                                 
+    inp = input.get()                                           
+    if inp == "":                                               
+        return
+    else:
+        print(f"Input has been confirmed and send as: {inp}")
+        chatdisplay.configure(state=NORMAL)                     
+        chatdisplay.insert(END, f'{user}: {inp} \n')            
+        chatdisplay.configure(cursor="arrow", state=DISABLED)   
+        inputentry.delete(0, END)                               
+        res = get_response(inp)                                 
+        print(f"Response: {res}")
+        restag = get_tag(inp)                                    
+        print(f"Tag: {restag}")
+```
 
+Dies ist der erste Teil von der ersten Funktion in 'userselection'. Das Programm holt sich zuerst den Input und packt ihn in eine Variable. Dann guckt es, ob dieser Input leer ist wenn ja, tut das Programm nichts. Wenn jedoch etwas erkannt wird, wird der Input mit dem Username zusammen im Chatdisplay angeziegt. Dann wird das Entry-Feld geleert und das Programm holt sich mit Hilfe der 'get_response'-Funktion aus <a href="#chat">chat.py</a> eine Antwort. Diese zeigt es dann auch im Chatdisplay an.
+
+```
+if restag == "datetime":                                #Hier wird geschaut ob der Tag datetime ist
+    time = datetime.now()                               #When ja so wird eine Variable erstellt, die Aktuelle Zeit und das Aktuelle Datum hat
+    timenow = time.strftime("%H:%M")                    #Hier wird die Darstellungs weise von der Zeit festgelegt
+    datenow = time.strftime("%d/%m/%Y")                 #Hier wird die Darstellungs weise vom Datum festgelegt
+    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
+    chatdisplay.insert(END, f'{bot_name}: The time is {timenow} and the date is \n{datenow} \n')        #Diese Zeile packt dann die Antwort in das Textfeld
+    chatdisplay.yview(END)                              #Siehe Z.95
+    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
+elif restag == "":                                      #Diese Zeile schaut ob es einen Tag gibt
+    global web_input                                    #wenn nicht dann wird mit Hilfe der globalen Variabel web_input der Input gespeichert
+    web_input = inp
+    print(f'web_input: {web_input}')
+    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
+    chatdisplay.insert(END, f'{bot_name}: {res} \n')    #Hinter der Antwort die hier in das Textfeld getan wird verbirgt sich die Antwort die by chat.py festgelt ist wenn kein Tag erkannt wurden ist
+    chatdisplay.yview(END)                              #Siehe Z.95
+    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96 -->
+elif restag == "yes":                                   #Hier wird geschaut ob der Tag yes ist
+    webbrowser.open(url + web_input)                    #Wenn dies stimmt öffnet das Programm eine Google-Suche im Browser mit dem vorherigen Input der als web_input gespeichert ist
+    print(f'web_input: {web_input}')
+    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
+    chatdisplay.insert(END, f'{bot_name}: Please wait a moment! \n')        #Mit dieser Zeile bittet der Bot um Geduld beim öffnen der Website
+    chatdisplay.yview(END)                              #Siehe Z.95
+    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
+elif restag == "no":    	                            #Wen der Tag no ist erkennt diese Zeile das
+    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
+    chatdisplay.insert(END, f'{bot_name}: Ok, Please type something else. \n')      #Der Bot bittet dann das User etwas anderes schreibt
+    chatdisplay.yview(END)                              #Siehe Z.95
+    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
+else:
+    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
+    chatdisplay.insert(END, f'{bot_name}: {res} \n')    #Wenn kein besonderer Tag erkannt wurde antwortet der bot einfach mit der Antwort, die er aus chat.py bekommen hat
+    chatdisplay.yview(END)                              #Siehe Z.95
+    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
+    if restag == "goodbye" or restag == "thanks":       #Wenn die Tags goodbye oder thanks erkannt werden löst das Programm dann noch die delay-Funktion aus
+        chatgui.after(1500, delay)
+```
+
+Dieser zweiter Teil der 'callback'-Funktion gehört in die elfe-Clause vom ersten Teil. Hier werden einige Sonderfälle definiert, wo der Chatbot besonders drauf antworten soll.
+(ab hier fehlt noch was)
 ## Wie führt man den Chatbot aus? <a name="ausführen"></a>
 
 Um unseren Chatbot zum Laufen zu bekommen, muss man sich zunächst alle Dateien importieren. Dann führt man zuerst <a href="#train">train.py</a> aus, damit der Chatbot erst einmal von der Data lernt. Daraufhin muss man dann nur noch <a href="#gui">gui_chatbot.py</a> ausführen, und der Chatbot sollte starten und funktionieren. Natürlich muss man sich dann zunächst eine Konto erstellen, aber nach erfolgreicher Registrierung und LogIn sollte man dann mit dem Chatbot reden können.
