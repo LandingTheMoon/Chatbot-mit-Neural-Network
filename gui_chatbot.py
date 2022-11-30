@@ -44,7 +44,7 @@ def mainscreen():                                                   #Erstellung 
     stylebutton = Style(chatgui)
     stylebutton.configure('log.TButton', background=bg_color2, height="2")
 
-    logoimage = Image.open("logo.png")                              #Hier wird das Logo geöffnet
+    logoimage = Image.open("Bilder/logo.png")                              #Hier wird das Logo geöffnet
     logoimageresize = logoimage.resize((125,90), Image.ANTIALIAS)   #In dieser Zeile wird die Größe vom Logo verändert
     imageneu = ImageTk.PhotoImage(logoimageresize)                  #Hier wird das Bild so verarbeitet das tkinter es darstellen kann
     logo = Label(chatgui, image=imageneu)                           #Hier wird ein Label erstellt mit dem Logo, so dass das Logo angezeigt wird

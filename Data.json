@@ -11,7 +11,7 @@
     },
     {
         "tag": "goodbye",
-        "patterns": ["out", "Bye", "Cya", "good day"],
+        "patterns": ["out", "Bye", "Cya", "good day", "goodbye"],
         "responses": ["Goodbye", "Have a nice day", "Hope I could help"]
     },
     {
