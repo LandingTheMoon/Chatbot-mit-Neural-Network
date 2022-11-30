@@ -18,7 +18,7 @@ txt_color = "#EAECEE"
 def mainscreen():                                                   #Erstellung der Funktion vom Hauptscreens
     global chatgui
     global loginButton
-    global registerButton                                           #Hier werden Variabeln erstellt die von allen Funktionen benutzt werden können
+    global registerButton                                           #Hier werden Variabeln erstellt die von allen Funktionen benutzt werden können   global exit1
     global exit1
     global w
     global h
@@ -103,7 +103,7 @@ def userselection():                                                #Diese Funkt
     web_input = ""                                                  #Variabel für die Internet suche
 
     def callback():                                                 #Diese Funktion wirt aktiviert wen der User etwas eingibt
-        inp = input.get()                                           #Hier wird die Eingabe abgefragt
+        inp = input.get()                                         #Hier wird die Eingabe abgefragt
         if inp == "":                                               #Diese if-clause schaut ob etwas im input ist, wenn nichts drin ist dann passiert auch nichts
             return
         else:
