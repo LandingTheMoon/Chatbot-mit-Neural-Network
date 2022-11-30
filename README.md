@@ -503,48 +503,62 @@ def callback():
 Dies ist der erste Teil von der ersten Funktion in 'userselection'. Das Programm holt sich zuerst den Input und packt ihn in eine Variable. Dann guckt es, ob dieser Input leer ist wenn ja, tut das Programm nichts. Wenn jedoch etwas erkannt wird, wird der Input mit dem Username zusammen im Chatdisplay angeziegt. Dann wird das Entry-Feld geleert und das Programm holt sich mit Hilfe der 'get_response'-Funktion aus <a href="#chat">chat.py</a> eine Antwort. Diese zeigt es dann auch im Chatdisplay an.
 
 ```
-if restag == "datetime":                                #Hier wird geschaut ob der Tag datetime ist
-    time = datetime.now()                               #When ja so wird eine Variable erstellt, die Aktuelle Zeit und das Aktuelle Datum hat
-    timenow = time.strftime("%H:%M")                    #Hier wird die Darstellungs weise von der Zeit festgelegt
-    datenow = time.strftime("%d/%m/%Y")                 #Hier wird die Darstellungs weise vom Datum festgelegt
-    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
-    chatdisplay.insert(END, f'{bot_name}: The time is {timenow} and the date is \n{datenow} \n')        #Diese Zeile packt dann die Antwort in das Textfeld
-    chatdisplay.yview(END)                              #Siehe Z.95
-    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
-elif restag == "":                                      #Diese Zeile schaut ob es einen Tag gibt
-    global web_input                                    #wenn nicht dann wird mit Hilfe der globalen Variabel web_input der Input gespeichert
+if restag == "datetime":                                
+    time = datetime.now()                               
+    timenow = time.strftime("%H:%M")                    
+    datenow = time.strftime("%d/%m/%Y")                 
+    chatdisplay.configure(state=NORMAL)                 
+    chatdisplay.insert(END, f'{bot_name}: The time is {timenow} and the date is \n{datenow} \n')        
+    chatdisplay.yview(END)                              
+    chatdisplay.configure(cursor="arrow", state=DISABLED) 
+elif restag == "":                                      
+    global web_input                                    
     web_input = inp
     print(f'web_input: {web_input}')
-    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
-    chatdisplay.insert(END, f'{bot_name}: {res} \n')    #Hinter der Antwort die hier in das Textfeld getan wird verbirgt sich die Antwort die by chat.py festgelt ist wenn kein Tag erkannt wurden ist
-    chatdisplay.yview(END)                              #Siehe Z.95
-    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96 -->
-elif restag == "yes":                                   #Hier wird geschaut ob der Tag yes ist
-    webbrowser.open(url + web_input)                    #Wenn dies stimmt öffnet das Programm eine Google-Suche im Browser mit dem vorherigen Input der als web_input gespeichert ist
+    chatdisplay.configure(state=NORMAL)                 
+    chatdisplay.insert(END, f'{bot_name}: {res} \n')    
+    chatdisplay.yview(END)                              
+    chatdisplay.configure(cursor="arrow", state=DISABLED) 
+elif restag == "yes":                                   
+    webbrowser.open(url + web_input)                    
     print(f'web_input: {web_input}')
-    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
-    chatdisplay.insert(END, f'{bot_name}: Please wait a moment! \n')        #Mit dieser Zeile bittet der Bot um Geduld beim öffnen der Website
-    chatdisplay.yview(END)                              #Siehe Z.95
-    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
-elif restag == "no":    	                            #Wen der Tag no ist erkennt diese Zeile das
-    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
-    chatdisplay.insert(END, f'{bot_name}: Ok, Please type something else. \n')      #Der Bot bittet dann das User etwas anderes schreibt
-    chatdisplay.yview(END)                              #Siehe Z.95
-    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
+    chatdisplay.configure(state=NORMAL)                 
+    chatdisplay.insert(END, f'{bot_name}: Please wait a moment! \n')        
+    chatdisplay.yview(END)                              
+    chatdisplay.configure(cursor="arrow", state=DISABLED)
+elif restag == "no":    	                            
+    chatdisplay.configure(state=NORMAL)                 
+    chatdisplay.insert(END, f'{bot_name}: Ok, Please type something else. \n')      
+    chatdisplay.yview(END)                              
+    chatdisplay.configure(cursor="arrow", state=DISABLED)       
 else:
-    chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
-    chatdisplay.insert(END, f'{bot_name}: {res} \n')    #Wenn kein besonderer Tag erkannt wurde antwortet der bot einfach mit der Antwort, die er aus chat.py bekommen hat
-    chatdisplay.yview(END)                              #Siehe Z.95
-    chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
-    if restag == "goodbye" or restag == "thanks":       #Wenn die Tags goodbye oder thanks erkannt werden löst das Programm dann noch die delay-Funktion aus
+    chatdisplay.configure(state=NORMAL)                 
+    chatdisplay.insert(END, f'{bot_name}: {res} \n')    
+    chatdisplay.yview(END)                              
+    chatdisplay.configure(cursor="arrow", state=DISABLED)
+    if restag == "goodbye" or restag == "thanks":       
         chatgui.after(1500, delay)
 ```
 
 Dieser zweiter Teil der 'callback'-Funktion gehört in die elfe-Clause vom ersten Teil. Hier werden einige Sonderfälle definiert, wo der Chatbot besonders drauf antworten soll.
-(ab hier fehlt noch was)
+Der erste Sonderfall ist wenn der 'tag' vom Userinput gleich 'datetime' ist, denn dann wird eine Variable mit der aktuellen Uhrzeit und dem aktuellen Datum erstellt. Dafür nutzen wir das PlugIn 'datetime'. Dann bringen wir die Zeit und das Datum in das von uns gewünschte Format und lassen es auf dem Chatdisplay anzeigen.
+Der zweite Sonderfall bzw. eigentlich die nächsten drei Sonderfälle hängen alle miteinander zusammen, denn sie ermöglichen die Websuche. Denn wenn der Input vom User keinem 'tag' zugeordnet werden konnte, wird der Input in eine globale Variable gepackt, damit wir gleich wieder drauf zu greifen können. Und es wird die normale Response-Funktion ausgeführt, bei dieser kommt aber, da der 'tag' unbekannt ist, am Ende die Frage raus, ob der Chatbot den Input vom User in Google suchen soll. Wenn er dies mit "ja" beantwortet (dies ist gleichzeitig der 3. Sonderfall), wird der Standardbrowser geöffnet und mit Google der Input gesucht. Der Chatbot gibt dann nur einmal im Chatdisplay aus, dass er User ein wenig Geduld haben soll, denn bei manchen Rechner dauert dies einen kurzen Moment länger. Falls der User mit "no" antwortet (4. Sonderfall), wird dieser einfach aufgefordert etwas anderes zu schreiben.
+Falls keiner von diesen Sonderfällen zu trifft, wird die normale Prozessur angewandt. Der Chatbot zeigt die Response, welche er aus <a href="#chat">chat.py</a> erhalten, an. Falls dabei festgestellt wird, dass er 'tag' vom Input 'goodbye' oder 'thanks' ist. Wird die Funktion 'delay' ausgeführt, welche das komplette Programm schließt. Vorher schreibt noch eine kurze Verabschiedungsnachricht.
+
+```
+def delay():                                                    
+        chatdisplay.configure(state=NORMAL)                         
+        chatdisplay.insert(END, f"This window will now be destroyed. \nPlease do not press anything. \n")       
+        chatdisplay.yview(END)                                      
+        chatdisplay.configure(cursor="arrow", state=DISABLED)       
+        chatgui.after(2500, quit)
+```
+
+Dies ist die eben genannte Funktion, welche damit auch die zweite Funktion in der großen 'userselection'-Funktion ist.
+
 ## Wie führt man den Chatbot aus? <a name="ausführen"></a>
 
-Um unseren Chatbot zum Laufen zu bekommen, muss man sich zunächst alle Dateien importieren. Dann führt man zuerst <a href="#train">train.py</a> aus, damit der Chatbot erst einmal von der Data lernt. Daraufhin muss man dann nur noch <a href="#gui">gui_chatbot.py</a> ausführen, und der Chatbot sollte starten und funktionieren. Natürlich muss man sich dann zunächst eine Konto erstellen, aber nach erfolgreicher Registrierung und LogIn sollte man dann mit dem Chatbot reden können.
+Um unseren Chatbot zum Laufen zu bekommen, muss man sich zunächst alle Dateien importieren. Zusätzlich braucht man Anaconda und dessen Erweiterungen (pytorch, tkinter, tkk und datetime) Dann führt man zuerst <a href="#train">train.py</a> aus, damit der Chatbot erst einmal von der Data lernt. Daraufhin muss man dann nur noch <a href="#gui">gui_chatbot.py</a> ausführen, und der Chatbot sollte starten und funktionieren. Natürlich muss man sich dann zunächst eine Konto erstellen, aber nach erfolgreicher Registrierung und LogIn sollte man dann mit dem Chatbot reden können.
 
 ## Quellen <a name="sources"></a>
 
