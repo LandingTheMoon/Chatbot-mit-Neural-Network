@@ -44,7 +44,7 @@ def mainscreen():                                                   #Erstellung 
     stylebutton = Style(chatgui)
     stylebutton.configure('log.TButton', background=bg_color2, height="2")
 
-    logoimage = Image.open("logo.png")                              #Hier wird das Logo geöffnet
+    logoimage = Image.open("Der Chatbot/logo.png")                              #Hier wird das Logo geöffnet
     logoimageresize = logoimage.resize((125,90), Image.ANTIALIAS)   #In dieser Zeile wird die Größe vom Logo verändert
     imageneu = ImageTk.PhotoImage(logoimageresize)                  #Hier wird das Bild so verarbeitet das tkinter es darstellen kann
     logo = Label(chatgui, image=imageneu)                           #Hier wird ein Label erstellt mit dem Logo, so dass das Logo angezeigt wird
@@ -244,9 +244,6 @@ def loginUser():                                                    #Diese Funkt
     username_input = username_verify.get()                          #Mit diesen beiden Zeilen wird der Input vom User abgefragt
     password_input = password_verify.get()
 
-    username_entry1.delete(0, END)                                  #Diese beiden Zeilen hingen leeren die Eingabefelder
-    password_entry1.delete(0, END)
-
     list_of_files = os.listdir()                                    #Hier wird eine Variabel erstellt, die aus einer List an Datein besteht fom aktuellen Path
     if username_input in list_of_files:                             #Diese If-Clause shaut ob der angegebene Username in der Liste von Datein ist
         file1 = open(username_input, "r")                           #Wenn ja dann wird hier diese Datei geöffnent
@@ -261,7 +258,7 @@ def loginUser():                                                    #Diese Funkt
             password_entry1.delete(0, END)                          #Und die Eingabe vom User im Feld vom Passwort wird gelöscht
     else:
         tkinter.messagebox.showinfo(title="Info", message="Username is wrong!")         #Falls keine Datei mit dem Username gefunden wird so wird ein Info-Fenster erstellt das dies sagt
-        username_entry1.delete(0, END)                              #Und es werden dieses mal alle Eingaben gelöscht
+        username_entry1.delete(0, END)                              #Diese beiden Zeilen hingen leeren die Eingabefelder
         password_entry1.delete(0, END)
 
 mainscreen()                                                        #Um das Programmm zu starten wird einmal die Funktion mainscreen ausgeführt

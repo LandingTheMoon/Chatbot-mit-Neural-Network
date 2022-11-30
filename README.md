@@ -353,7 +353,135 @@ Dann haben wir noch eine weiter Funktion get_tag in chat.py, welche exakt das gl
 
 ### 6. gui_chatbot.py <a name="gui"></a>
 
-test
+In diesem letzten Programm haben wir das komplette Aussehen vom Chatbot designed. Mit allem was wir uns dazu gedacht haben, sprich mit dem Registrierung- und Loginsystems, der Scrollbar und alles was dazu gehört. Zudem haben wir auch noch einige letzten if-Statements für den Chatbot hinzugefügt.
+
+Zunächst mussten natürlich erstmal wieder alle nötigen Librarys und Funktionen aus anderen Programmen importiert werden. Dann haben wir noch drei Variablen definiert, einmal 'url', welche wir für unsere Webbrowser-Funktion brauchen, die ich später erklären werde, und zum anderen drei Farben, welche wir den Labels, Buttons, etc. im weiteren Code zuordnen werden.
+
+Im folgenden definieren wir nun einige seperate Funktionen. Angefangen haben wir mit der Funktion unseres Mainscreens, welche wir auch am Ende ausführen und der Startschuss für unser komplettes Programm ist. 
+
+```
+def mainscreen():
+    w = 400
+    h = 500
+    chatgui = Tk()                                                  
+    chatgui["background"] = bg_color1                               
+    chatgui.title("Jeffrey.py")                                     
+    chatgui.configure(width=w, height=h)                            
+    chatgui.resizable(width=False, height=False)
+
+    theme = Style()                                                 
+    theme.theme_use('vista')
+
+    stylegui = Style(chatgui)                                       
+    stylegui.configure('.', font=("Avenir", 9))
+    
+    welcome = Label(chatgui, text="Welcome to our Chatbot!", font="Avenir 16", background = bg_color1 , foreground="#C14F00")
+    welcome.place(x=80, y=80)                                       
+    welcome.config()
+```
+
+Dies ist ein beispielhafter Ausschnitt aus dieser Funktion, in den ersten Zeilen Code wir überhaupt erstmal das Fenster erstellt. Es wird die Farbe, der Name und die Größe festgelegt. In den darauf folgenden Zeilen legen wir das Thema mithilfe von ttk fest (ttk ist eine Erweiterung zu tkinter, welche mehr Möglichkeiten zum Designen bietet). Dieses Thema hat ein festgelegtes Design für Buttons, Entrys, etc. Dann wird noch die Hauptschriftart definiert, die in unserem Fall "Avenir" ist, mit der Größe 9. Als Beispiel wie wir die Elemente auf unsere Seiten bringen, haben wir uns unser Welcome-Label ausgesucht, als erstes legen wir dabei fest, dass dieses Label auf diesm Fenster platziert werden soll, dann den Text des Labels, darauf die Schrift und deren Größe und zum Schluss die Hinter- und Vordergrundfarbe. Die Vordergrundfarbe ist hierbei die Schriftfarbe. Dann wird noch definiert wo dieses Label platziert werden soll und die 'config'-Funktion platziert es dann einfach Final. Dieses System wenden wir bei allen Elementen an. Bei Buttons fügen wir dann einfach noch einen Command hinzu, der zu einer weiter Funktion von diesem Programm führt.
+
+Außerdem werden in dieser Funktion-'mainscreen' noch einige Variablen globalisiert, sodass man im gesamten Programm darauf zugreifen kann. Zudem werden noch zwei Styles für die Buttons und die Scrollbar definiert, in dem gleichen Sinne, wie bei der Schrift. Und es werden noch das Logo, der LogIn und Registrierungs Button und der Exit-Button auf der Seite platziert.
+
+```
+def quit():                                                         
+    chatgui.destroy()
+    print("window has been destroyed")
+```
+
+Diese Funktion wird beim Auslösen des Exit-Buttons oder der Tastenfolge shift+enter Ausgelöst und zerstört das Gesamte GUI, sprich das gesamte Programm.
+
+```
+def register():                                                     
+    registerScreen = Toplevel(chatgui)                              
+    registerScreen.geometry("300x250")
+    registerScreen.title("Registration")
+    registerScreen["background"] = bg_color1
+
+    username = StringVar()                                          
+    password = StringVar()
+
+    Label(registerScreen, text="Username", background=bg_color1, foreground=txt_color).pack()       
+    username_entry = Entry(registerScreen, textvariable=username)   
+    username_entry.pack()                                           
+    username_entry.focus()                                          
+    Label(registerScreen, text="Password", background=bg_color1, foreground=txt_color).pack() 
+    password_entry = Entry(registerScreen, textvariable=password, show="*")      
+    password_entry.pack()                                               
+    Button(registerScreen, text="Register", width="10", command=registerUser, style='log.TButton').pack()
+```
+
+Dies ist ein Teil der 'register'-Funktion, welche ausgelöst wird, wenn der 'Register'-Button auf dem mainscreen gedrückt wird. Erst einmal wird natürlich erstmal wieder das Fenster erstellt. Besonders hierbei ist, dass dieses ein PopUp Fenster vom Mainscrenn sein wird. Dann legen wir mit 'username' und 'password' zwei Variablen für den Input fest. Dann fügen wir wieder Elemente zu unserem Fenster hinzu. In diesem Fall sind die beiden 'entry'-Felder besonders. Dessen Input wird nämlich direkt in den eben erwähnten Variablen gespeichert und bei dem 'password'-Entry haben wir die Besonderheit, dass man nicht den richtigen Text sieht sondern anstelle von diesm nur Sternchen.
+
+Weitergehen, was in diesem Beispielcode nicht zu sehen ist, werden einige Platzhalter-Labels erstellt und es werden wieder einige Variablen globalisiert.
+
+```
+def registerUser():                                                
+    if username.get() == "" or password.get() == "":               
+        tkinter.messagebox.showinfo(title="Info", message="No input recognized!")   
+    else: 
+        username_info = username.get()                              
+        password_info = password.get()
+
+        file = open(username_info, "w")                             
+        file.write(username_info+"\n")                              
+        file.write(password_info)                                   
+        file.close()                                                
+
+        username_entry.delete(0, END)                               
+        password_entry.delete(0, END)
+
+        tkinter.messagebox.showinfo(title="Info", message="Registration succesful!")        
+        registerScreen.destroy()  
+```
+
+Diese Funktion wird vom Button 'Register' auf dem eben erklärten PopUp-Fenster für die Registrierung aufgerufen. Sie registriert den User. Dafür wird erstmal überprüft, ob es überhaupt einen Input gab. Wenn nämlich nicht, sagt das Programm dies dem User durch eine tkinter-Messagebox. 
+Falls beide Eingabefelder Input enthalten, holt sich die Funktion die beiden Inputs. Dann erstellt das Programm eine Textatei im aktuellen Path mit dem Namen des Usernames, dann schreibt das Programm in die erste Zeile der Datei den Username und die Nächste das Passwort. Dann schließt das Programm die Datei und speichert sie. 
+Darauf werden beide Eingabefelder zerstört, eine Messagbox geschickt, dass die Registrierung erfolgreich war, und final wird dann das Pop-Up Fenster für die Registrierung zerstört. Man landet dann wieder auf dem Mainscreen.
+
+```
+def login():                                                        
+    loginScreen = Toplevel(chatgui)                                 
+    loginScreen.title("Login")
+    loginScreen.geometry("300x250")
+    loginScreen["background"] = bg_color1
+```
+
+Die Login-Funktion wird durch den Login-Button auf dem Mainscreen ausgelöst und erstellt wieder ein PopUp-Fenster. Diese sieht genauso aus wie jenes von der Registrierung. Es wurden nur einige Texte geändert.
+
+```
+def loginUser():                                                    
+    list_of_files = os.listdir()                                    
+    if username_input in list_of_files:                             
+        file1 = open(username_input, "r")                           
+        verify = file1.read().splitlines()                          
+        if password_input in verify:                                
+            tkinter.messagebox.showinfo(title="Info", message="Login succesful!")       
+            therealusername = username_input                        
+            loginScreen.destroy()                                   
+            userselection()                                         
+        else:
+            tkinter.messagebox.showinfo(title="Info", message="Password is wrong!")         
+            password_entry1.delete(0, END)                          
+    else:
+        tkinter.messagebox.showinfo(title="Info", message="Username is wrong!")         
+        username_entry1.delete(0, END)                              
+        password_entry1.delete(0, END)
+```
+
+Diese Funktion wird durch den Login-Button auf dem Login-PopUp-Fenster ausgeführt. Sie ist dazu zuständig den Login-Vorgang durchzuführen. Zuerst werden, was jetzt nicht in diesem Codebeispiel gezeigt ist, es werden wieder die Inputs von den Entry-Feldern auf dem Login-PopUp Fenster in eine Variable verpackt. 
+Dann wird eine Liste mit dem Namen von alles Files im aktuellen Path erstellt. Darauf folgt eine if-Abfrage ob der Username vom Login-Entry in den Files wiederzufinden ist. Wenn dies nicht der Fall ist, wird eine Messagebox geschickt, dass der Username falsch ist und die beiden Entry-Felder werden geleert. Falls dies aber der Fall ist, wird diese Datei mit dem Username geöffnet und die beiden Zeilen werden getrennt gelesen. Falls nun das Passwort vom 'password'-Entry auch noch in dieser Datei ist, kriegt der User eine Messagebox, dass der Login erfolgreich war und der username wird in eine globale Variable gapackt. Zudem wird noch das Login-PopUp Fenster zerstört und die Funktion 'userselection', welche den eigentlichen Chatbot startet, ausgeführt. Im Falle, dass das Passwort nicht übereinstimmt, bekommt der User dazu eine Messagebox und es wird nur das Passwort-Entry geleert.
+
+```
+mainscreen()           
+```
+
+Diese letzte Zeile Code ist die Wichtigste, denn diese führt die Funktion 'mainscreen' aus und startet somit das komplette Programme.
+
+### userselection()
+
+
 
 ## Wie führt man den Chatbot aus? <a name="ausführen"></a>
 
