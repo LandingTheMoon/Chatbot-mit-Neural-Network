@@ -18,7 +18,7 @@ txt_color = "#EAECEE"
 def mainscreen():                                                   #Erstellung der Funktion vom Hauptscreens
     global chatgui
     global loginButton
-    global registerButton                                           #Hier werden Variabeln erstellt die von allen Funktionen benutzt werden können   global exit1
+    global registerButton                                           #Hier werden Variablen erstellt die von allen Funktionen benutzt werden können   global exit1
     global exit1
     global w
     global h
@@ -28,7 +28,7 @@ def mainscreen():                                                   #Erstellung 
     chatgui = Tk()                                                  #Hier wird der Hauptscreen erstellt
     chatgui["background"] = bg_color1                               #Farbe des Interfaces wird festgelegt
     chatgui.title("Jeffrey.py")                                     #Titel
-    chatgui.configure(width=w, height=h)                            #Größe des Interfaces festgelegt dürch die Variabeln w und h
+    chatgui.configure(width=w, height=h)                            #Größe des Interfaces festgelegt dürch die Variablen w und h
     chatgui.resizable(width=False, height=False)                    #Diese Zeile legt fest, dass der User nicht die Größe vom Fenster verädern kann
     
     theme = Style()                                                 #Theme setzt das theme von allen Sachen, wie z.B. von Buttons
@@ -100,7 +100,7 @@ def userselection():                                                #Diese Funkt
     exit2.place(x=310, y=425)
     chatgui.bind('<Shift_L><Return>', lambda event:delay())         #Siehe Z.68
 
-    web_input = ""                                                  #Variabel für die Internet suche
+    web_input = ""                                                  #Variable für die Internet suche
 
     def callback():                                                 #Diese Funktion wirt aktiviert wen der User etwas eingibt
         inp = input.get()                                         #Hier wird die Eingabe abgefragt
@@ -125,7 +125,7 @@ def userselection():                                                #Diese Funkt
                 chatdisplay.yview(END)                              #Siehe Z.95
                 chatdisplay.configure(cursor="arrow", state=DISABLED)       #Siehe Z.96
             elif restag == "":                                      #Diese Zeile schaut ob es einen Tag gibt
-                global web_input                                    #wenn nicht dann wird mit Hilfe der globalen Variabel web_input der Input gespeichert
+                global web_input                                    #wenn nicht dann wird mit Hilfe der globalen Variable web_input der Input gespeichert
                 web_input = inp
                 print(f'web_input: {web_input}')
                 chatdisplay.configure(state=NORMAL)                 #Siehe Z.93
@@ -172,7 +172,7 @@ def register():                                                     #Diese Funkt
     registerScreen.title("Registration")
     registerScreen["background"] = bg_color1
 
-    username = StringVar()                                          #Das sind wieder zwei Variabeln um den Input vom User abzufragen
+    username = StringVar()                                          #Das sind wieder zwei Variablen um den Input vom User abzufragen
     password = StringVar()
 
     Label(registerScreen, text="", background=bg_color1).pack()     #Diese beiden leeren Labels sind da um Abstände zu machen
@@ -239,7 +239,7 @@ def login():                                                        #Diese Funkt
     loginScreen.bind('<Return>', lambda event:loginUser())          #Siehe Z.60
 
 def loginUser():                                                    #Diese Funktion logt den User ein
-    global therealusername                                          #Hier wird wieder eine Globale Variabel erstellt
+    global therealusername                                          #Hier wird wieder eine Globale Variable erstellt
 
     username_input = username_verify.get()                          #Mit diesen beiden Zeilen wird der Input vom User abgefragt
     password_input = password_verify.get()
@@ -247,7 +247,7 @@ def loginUser():                                                    #Diese Funkt
     username_entry1.delete(0, END)                              #Diese beiden Zeilen hingen leeren die Eingabefelder
     password_entry1.delete(0, END)
 
-    list_of_files = os.listdir()                                    #Hier wird eine Variabel erstellt, die aus einer List an Datein besteht fom aktuellen Path
+    list_of_files = os.listdir()                                    #Hier wird eine Variable erstellt, die aus einer List an Datein besteht fom aktuellen Path
     if username_input in list_of_files:                             #Diese If-Clause shaut ob der angegebene Username in der Liste von Datein ist
         file1 = open(username_input, "r")                           #Wenn ja dann wird hier diese Datei geöffnent
         verify = file1.read().splitlines()                          #Hier werden die beiden Zeilen der Datei getrennt gelesen

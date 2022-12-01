@@ -14,7 +14,7 @@ data = torch.load(FILE)                                             #Lädt das E
 
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
-output_size = data["output_size"]                                   #Holt sich die Parameter und Variabeln aus Train.py
+output_size = data["output_size"]                                   #Holt sich die Parameter und Variablen aus Train.py
 all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
