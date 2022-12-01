@@ -1,6 +1,6 @@
 <h1 align=center>Chatbot mit Neural Network - Projektseite</h1>
 <div align=center>
-    <img src='Der Chatbot/logo.png', height="200", border="5"></img>
+    <img src='Bilder/logo.png', height="200", border="5"></img>
 </div>
 <h3 align=center>von Jan Drewes (@LandingTheMoon) & 
 Louis Lemberg (@MindOfUs)</h3>
@@ -53,7 +53,7 @@ Louis Lemberg (@MindOfUs)</h3>
                 <a href="#nltk">nltk_utils.py</a>
             </li>
             <li>
-                <a href="#model">model.json</a>
+                <a href="#model">model.py</a>
             </li>
             <li>
                 <a href="#train">train.py</a>
@@ -63,11 +63,19 @@ Louis Lemberg (@MindOfUs)</h3>
             </li>
             <li>
                 <a href="#gui">gui_chatbot.py</a>
+                <ol>
+                    <li>
+                        <a href="#user">def userselection()</a>
+                    </li>
+                </ol>
             </li>
         </ol>
     </li>
     <li>
         <a href="#ausführen">Wie führt man den Chatbot aus?</a>
+    </li>
+    <li>
+        <a href="Design vom Chatbot.md">Design vom Chatbot und Fotos vom Code</a>
     </li>
     <li>
         <a href="Stundenprotokoll.md">Stundenprotokoll</a>
@@ -479,7 +487,7 @@ mainscreen()
 
 Diese letzte Zeile Code ist die Wichtigste, denn diese führt die Funktion 'mainscreen' aus und startet somit das komplette Programme.
 
-### def userselection()
+#### def userselection() <a name="user"></a>
 
 Diese Funktion ist die Verknüpfung zwischen der chat.py Datei und dieser GUI Datei und wird durch ein erfolgreiches Login ausgeführt. Innerhalb dieser Funktion gibt es nochmal zwei weitere Funktionen. Vor diesen anderen beiden Funktionen, wird erst einmal der Username vom erfolgreichen Login in eine Variable gepackt. Dann wird der Mainscreen in den Chatbotscreen umgewandelt. Die Login und Registrierungs-Buttons werden entfernt, und die Scrollbar, das Entry-Feld und das Chatdisplay werden hinzugefügt. Zudem wird noch ein Enter-Button zum Abschicken und eine Label für die Erklärung zum Nachrichten schicken und für den Exit hinzugefügt. Außerdem wird der Input vom User in eine Variable gepackt.
 
