@@ -560,6 +560,18 @@ Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data
     <li>
         <a href="https://www.youtube.com/watch?v=Xt6SqWuMSA8&list=WL&index=2">https://www.youtube.com/watch?v=Xt6SqWuMSA8&list=WL&index=2</a>
     </li>
+    <li>
+        <a href="https://gist.github.com/Yagisanatode/6ccef95e75c5686474c7">https://gist.github.com/Yagisanatode/6ccef95e75c5686474c7</a>
+    </li>
+    <li>
+        <a href="https://randerson112358.medium.com/build-a-simple-chat-bot-graphical-user-interface-using-python-adf7bd558fc3">https://randerson112358.medium.com/build-a-simple-chat-bot-graphical-user-interface-using-python-adf7bd558fc3</a>    
+    </li>
+    <li>
+        <a href="https://stackoverflow.com/questions/48698283/can-you-remove-arrows-on-tkinter-scrollbar-widget-in-python">https://stackoverflow.com/questions/48698283/can-you-remove-arrows-on-tkinter-scrollbar-widget-in-python</a>
+    </li>
+    <li>
+        <a href="https://www.tutorialspoint.com/how-to-resize-an-image-using-tkinter">https://www.tutorialspoint.com/how-to-resize-an-image-using-tkinter</a>
+    </li>
 </ol>
 
 Alle Links wurden zuletzt erfolgreich am 01.12.2022 um --.-- Uhr geöffnet.
