@@ -80,7 +80,7 @@
     {
         "tag": "thanks",
         "patterns": ["thanks", "thank you"],
-        "responses": ["You're welcome!", "It was a pleasure for me to help you!"]
+        "responses": ["You're welcome!", "I'm glad that I could help!"]
     },
     {
         "tag": "botfeeling",
