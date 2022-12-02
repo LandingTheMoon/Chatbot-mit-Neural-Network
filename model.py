@@ -9,7 +9,7 @@ class NeuralNet(nn.Module):
         self.l3 = nn.Linear(hidden_size, num_classes)
         self.relu = nn.ReLU()
 
-    def forward(self, x):                                           #Funktion die die passes im Neurelnetwork macht
+    def forward(self, x):                                           #Funktion die die passes im Neural Network macht
         out = self.l1(x)
         out = self.relu(out)
         out = self.l2(out)

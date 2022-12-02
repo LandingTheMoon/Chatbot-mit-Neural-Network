@@ -99,7 +99,7 @@ Bei uns gab es zu Beginn jedoch abgesehen von dem Projekt eine kleine extra Hera
 
 ### 2. Die Idee <a name="idee"></a>
 
-Bei der Ideenfindung haben wir uns am Anfang sehr schwer getan. Eigentlich hätten wir gerne ein Projekt mit einem Arduino gemacht, da für uns beide die Arbeit mit einem kleinen Computer sehr spannend schien. Diese Idee mussten wir jedoch durch die am Anfang bestehende Distanz zwischen uns verwerfen. Dann haben wir uns darauf geeinigt keine externen Geräte zuverwenden, sondern einen Chatbot zuprogramieren. Um diesen aber ein wenig spannender zu gestalten, haben wir uns als Ziel gesetzt, mit einem Neural Network zu arbeiten. Dies war für uns beide komplett neu, hat uns aber sofort begeistert und interessiert. Und von da an ging alles seinen Lauf, wir haben damit begonnen die benötigten Programme zu intsallieren, welche wir unter <a href="#programme">den verwendeten Programmen</a> vorstellen. Nachdem wir uns mit den Programmen vertraut gemacht haben, haben wir mit dem Chatbot losgelegt. Anfangs wollten wir eigentlich einen Chatbot programmieren, welcher mathematische Probleme löst, diese Idee wurde jedoch durch das Neural Network zu zeitaufwändig, somit haben wir uns darauf konzentriert, einen Chatbot zu entwickeln, der ein normales Gespräch führen und dabei auf umfangreiche Eingaben des Users reagieren kann.
+Bei der Ideenfindung haben wir uns am Anfang sehr schwer getan. Eigentlich hätten wir gerne ein Projekt mit einem Arduino gemacht, da für uns beide die Arbeit mit einem kleinen Computer sehr spannend schien. Diese Idee mussten wir jedoch durch die am Anfang bestehende Distanz zwischen uns verwerfen. Dann haben wir uns darauf geeinigt keine externen Geräte zu verwenden, sondern einen Chatbot zu programmieren. Um diesen aber ein wenig spannender zu gestalten, haben wir uns als Ziel gesetzt, mit einem Neural Network zu arbeiten. Dies war für uns beide komplett neu, hat uns aber sofort begeistert und interessiert. Und von da an ging alles seinen Lauf, wir haben damit begonnen die benötigten Programme zu installieren, welche wir unter <a href="#programme">den verwendeten Programmen</a> vorstellen. Nachdem wir uns mit den Programmen vertraut gemacht haben, haben wir mit dem Chatbot losgelegt. Anfangs wollten wir eigentlich einen Chatbot programmieren, welcher mathematische Probleme löst, diese Idee wurde jedoch durch das Neural Network zu zeitaufwändig, somit haben wir uns darauf konzentriert, einen Chatbot zu entwickeln, der ein normales Gespräch führen und dabei auf umfangreiche Eingaben des Users reagieren kann.
 
 ## Die verwendeten Programme <a name="programme"></a>
 
@@ -115,12 +115,12 @@ Für die Programmierumgebung haben wir uns für VisualStudio Code (VSC) entschie
 
 ### 3. Anaconda (Distributionssoftware/Interpreter) <a name="anaconda"></a>
 
-Als Python-Intepreter haben wir uns für Anaconda entschieden. Der Hauptgrund war, dass es mit Pytorch kompatibel ist, und wir auf Pytorch angewiesen waren. Zusätzlich hat Anaconda eine große Palette an Liberies, die man installieren und verwenden kann.
+Als Python-Interpreter haben wir uns für Anaconda entschieden. Der Hauptgrund war, dass es mit Pytorch kompatibel ist, und wir auf Pytorch angewiesen waren. Zusätzlich hat Anaconda eine große Palette an Liberies, die man installieren und verwenden kann.
 Anaconda ist allgemein für die Entwicklung von Anwendungen mit großen Datenmengen, wozu unser Projekt gehört, ausgelegt.
 
 ### 4. Pytorch (Neural Network) <a name="pytorch"></a>
 
-Pytroch ist ein Framework, welches für Machine Learning genutzt wird. Es wird von vielen große Unternehmen für die Entwicklung künstlicher Intelligenzen und Verarbeitung großer Datenmengen genutzt auch findet es in der Forschung vielfältigen Einsatz. Deswegen und da es schnell arbeitet, eine sehr benutzerfreundlliche Oberfläche und einfach zu erlernen ist, haben wir uns für Pytorch entschieden.
+Pytroch ist ein Framework, welches für Machine Learning genutzt wird. Es wird von vielen große Unternehmen für die Entwicklung künstlicher Intelligenzen und Verarbeitung großer Datenmengen genutzt auch findet es in der Forschung vielfältigen Einsatz. Deswegen und da es schnell arbeitet, eine sehr benutzerfreundliche Oberfläche und einfach zu erlernen ist, haben wir uns für Pytorch entschieden.
 
 ### 5. NLTK (Natural Language Toolkit) <a name="nltk"></a>
 
@@ -128,7 +128,7 @@ NLTK ist ein Tool, das natürliche Sprache in 'Computersprache übersetzt'. In u
 
 ### 6. tkinter (GUI) <a name="tk"></a>
 
-Tkinter ist eine Python-Erweiterung, welche wir dafür benutzt haben die GUI von unserem Chatbot zu designen. Trotz anderer Moöglichkeiten haben wir und für tkinter entschieden, da es am häufigsten verwendet wird und somit die meisten Tutorials und Dokumentation hat.
+Tkinter ist eine Python-Erweiterung, welche wir dafür benutzt haben die GUI von unserem Chatbot zu designen. Trotz anderer Möglichkeiten haben wir und für tkinter entschieden, da es am häufigsten verwendet wird und somit die meisten Tutorials und Dokumentation hat.
 
 ## Der Chatbot <a name="chatbot"></a>
 
@@ -192,7 +192,7 @@ Dieses Programm 'trainiert' den Chatbot auf Basis der <a href="#data">data.json<
 for x in range (0, 3):
 ```
 
-Damit am Ende, der Bot alle Tags erkennt, haben wir beschlossen, dass der Chatbot dreimal hintereinander mit der <a href="#data">data.json</a> Datei traniert. Die for-Funktion, am Anfang vom Programm, wiederholt das Programm, solange bis dreimal ausgeführt worden ist.
+Damit am Ende, der Bot alle Tags erkennt, haben wir beschlossen, dass der Chatbot dreimal hintereinander mit der <a href="#data">data.json</a> Datei trainiert. Die for-Funktion, am Anfang vom Programm, wiederholt das Programm, solange bis dreimal ausgeführt worden ist.
 
 ```
 data_json = 'Data.json'
@@ -233,7 +233,7 @@ y_train = np.array(y_train)
 
 Im nächsten Schritt werden drei weitere Listen erstellt mit Hilfe der bag_of_words-Funktion aus <a href="#nltk">nltk_utils.py</a>. Danach konvertiert das Programm die Listen zu arrays. Diese beiden Aktionen sind notwendig, damit der Chatbot mit diesen Daten trainieren kann.
 
-Es werden Variabeln festgelegt, die das Neural Network benötigkt, und eine Klasse erstellt, in der die Trainigsdaten gespeichert werden.
+Es werden Variablen festgelegt, die das Neural Network benötigt, und eine Klasse erstellt, in der die Trainigsdaten gespeichert werden.
 
 ```
 train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)     
@@ -244,7 +244,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = to.optim.Adam(model.parameters(), lr=learning_rate)
 ```
 
-Desweiteren wird ein Dataloader definiert, welcher die Daten liest und formatiert. Das Neural Network wird mit Hilfe von <a href="#model">model.py</a> und vorher definierten Variablen erstellt und gespeichert.
+Des weiteren wird ein Dataloader definiert, welcher die Daten liest und formatiert. Das Neural Network wird mit Hilfe von <a href="#model">model.py</a> und vorher definierten Variablen erstellt und gespeichert.
 Am Schluss werden criterion und optimizer festgelegt, ersterer bestimmt den 'Loss' beim Training und letzterer stellt sicher, dass der Chatbot 'lernt' und sich verbessert.
 
 ```
@@ -288,8 +288,8 @@ Am Ende werden die gesamten Trainingsdaten in der Datei data.pth im aktuellen pa
 
 ### 5. chat.py <a name="chat"></a>
 
-Dieses Programm berechnet die Antwort auf die Anfrage/Input des Users, indem es den Tag (Themengruppe) vom Input bestimmt und dann eine Antwort aus diesem Tag zuwällig auswählt.
-Zuerst werden alle benötigten Librarys importiert. Dann wird die <a href="#data">Data.json</a>-Datei zusammen mit der 'data.pth'-Datei, welche ja unsere Trainingsdata enthält, geöffent und gelesen. Zudem holt sich das Programm die Variablen und die dazugehörigen Parameter, welche am Ende von <a href="#train">train.py</a> definiert wurden.
+Dieses Programm berechnet die Antwort auf die Anfrage/Input des Users, indem es den Tag (Themengruppe) vom Input bestimmt und dann eine Antwort aus diesem Tag zufällig auswählt.
+Zuerst werden alle benötigten Librarys importiert. Dann wird die <a href="#data">Data.json</a>-Datei zusammen mit der 'data.pth'-Datei, welche ja unsere Trainingsdata enthält, geöffnet und gelesen. Zudem holt sich das Programm die Variablen und die dazugehörigen Parameter, welche am Ende von <a href="#train">train.py</a> definiert wurden.
 
 ```
 model = NeuralNet(input_size, hidden_size, output_size)
@@ -297,7 +297,7 @@ model.load_state_dict(model_state)
 model.eval()
 ```
 
-Anhand der vorher festgelegten Variabeln, wird das 'Model' geladen, ähnlich wie zuvor in <a href="#train">train.py</a>.
+Anhand der vorher festgelegten Variablen, wird das 'Model' geladen, ähnlich wie zuvor in <a href="#train">train.py</a>.
 
 ```
 bot_name = "Jeffrey" 
@@ -330,7 +330,7 @@ def get_response(msg):
 
 Diese Funktion gibt eine Antwort auf die Eingabe vom User aus. Dafür wird zuerst die Eingabe in ihre Bestandteile zerlegt ('tokenized'). Die so erstellte Liste wird durch die 'reshape'-Funktion noch einmal umformatiert. <a href="#pytorch">Pytorch</a> ist nicht in der Lage mit arrays zu arbeiten, deswegen wird ein Tensor erstellt.
 Das Programm lässt diesen Tensor durch das Model laufen und definiert damit die Vorhersage (Prediction) über den Input-Tag. Zusätzlich errechnet es die Wahrscheinlichkeit, dass es die richtige Prediction ist. 
-Wenn die Wahrscheinlichkeit > 0.75 ist, sucht es alle Tags in <a href="#data">Data.json</a> nach dem vohergesagtem Tag ab. Findet das Programm den richtigen Tag in <a href="#data">Data.json</a> gibt es eine zufällige Antwort ('response') aus. Ist die Wahrscheinlichkeit kleiner < 0,75, wird die Nachricht "I do not understand. Do you want me to search that?" ausgegebn.
+Wenn die Wahrscheinlichkeit > 0.75 ist, sucht es alle Tags in <a href="#data">Data.json</a> nach dem vorhergesagtem Tag ab. Findet das Programm den richtigen Tag in <a href="#data">Data.json</a> gibt es eine zufällige Antwort ('response') aus. Ist die Wahrscheinlichkeit kleiner < 0,75, wird die Nachricht "I do not understand. Do you want me to search that?" ausgegeben.
 
 Die Funktion get_tag ist genau so aufgebaut wie die zuvor beschriebene Funktion get_response, jedoch liefert sie den vorhergesagten Tag als Ergebnis zurück. Diese Information wird im Programm <a href="#gui">gui_chatbot.py</a> benutzt, um fünf spezielle Inputs zu verarbeiten/beantworten.
 
@@ -338,9 +338,9 @@ Die Funktion get_tag ist genau so aufgebaut wie die zuvor beschriebene Funktion 
 
 Mit diesem Programm haben wir das Aussehen des Chatbots designed, u.a. enthält es ein Registrierungs- und Loginsystem, sowie eine Scrollbar. Zusätzlich haben wir den Chatbot um fünf spezielle Funktionen mit Hilfe der get_tag Funktion aus <a href="#chat">chat.py</a> erweitert.
 
-Zu Beginn werden alle benötigten Librarys und Funktionen aus den anderen Programmen importiert, sowie vier Variablen definiert. Die erste Variable 'url' wird für die Webbrowser-Funktion benötigt (Erklärung s.u.), mit Hilfe der drei weiteren Variablen werden Farben defeniert, die für Labels, Buttons, etc. verwendet werden.
+Zu Beginn werden alle benötigten Librarys und Funktionen aus den anderen Programmen importiert, sowie vier Variablen definiert. Die erste Variable 'url' wird für die Webbrowser-Funktion benötigt (Erklärung s.u.), mit Hilfe der drei weiteren Variablen werden Farben definiert, die für Labels, Buttons, etc. verwendet werden.
 
-Im folgenden definieren wir einige seperate Funktionen.
+Im folgenden definieren wir einige separate Funktionen.
 
 ```
 def mainscreen():
@@ -365,9 +365,9 @@ def mainscreen():
     chatgui.mainloop()
 ```
 
-Dies ist ein beispielhafter Ausschnitt aus der Funktion mainscreen. Zu Beginn wird das Fenster erstellt, dafür wird die Farbe, der Name und die Größe festgelegt. In den darauf folgenden Zeilen wird das Thema mit Hilfe von ttk bestimmt, ttk ist eine Erweiterung zu tkinter, welche mehr Möglichkeiten zum Gestallten bietet. Das Thema hat ein festgelegtes Design für Buttons, Entrys, usw.. Anschließend wird die Hauptschriftart definiert, die in unserem Fall "Avenir" ist, mit der Schriftgröße 9. Anhand unseres Welcome-Labels erklären wir wie im Fenster etwas angezeigt wird. Als erstes wird festgelegt in welchem Fenster das Label plaziert werden soll. Danach folgen der Text des Labels, sowie die Schriftart und -größe. Zum Schluss folgen Hinter- und Vordergrundfarbe. Die Vordergrundfarbe ist hierbei die Schriftfarbe. Mit der nachfolgenden Funktion wird das Label im Fenster platziert. Dieses System wenden wir bei allen Elementen an. Bei Buttons fügen wir einen weiteren Command hinzu, der die entsprechende Funktion startet, z.B. die callback-Funktion.
+Dies ist ein beispielhafter Ausschnitt aus der Funktion mainscreen. Zu Beginn wird das Fenster erstellt, dafür wird die Farbe, der Name und die Größe festgelegt. In den darauf folgenden Zeilen wird das Thema mit Hilfe von ttk bestimmt, ttk ist eine Erweiterung zu tkinter, welche mehr Möglichkeiten zum Gestalten bietet. Das Thema hat ein festgelegtes Design für Buttons, Entrys, usw.. Anschließend wird die Hauptschriftart definiert, die in unserem Fall "Avenir" ist, mit der Schriftgröße 9. Anhand unseres Welcome-Labels erklären wir wie im Fenster etwas angezeigt wird. Als erstes wird festgelegt in welchem Fenster das Label platziert werden soll. Danach folgen der Text des Labels, sowie die Schriftart und -größe. Zum Schluss folgen Hinter- und Vordergrundfarbe. Die Vordergrundfarbe ist hierbei die Schriftfarbe. Mit der nachfolgenden Funktion wird das Label im Fenster platziert. Dieses System wenden wir bei allen Elementen an. Bei Buttons fügen wir einen weiteren Command hinzu, der die entsprechende Funktion startet, z.B. die callback-Funktion.
 
-Zusätzlich werden in der Funktion-'mainscreen' einige Variablen globalisiert, sodass man im gesamten Programm auf diese zugreifen kann. Ebenfalls werden zwei weitere Styles für die Buttons und die Scrollbar definiert. Zum Label dazu werden das Logo, der Login-, Registrierungs- und Exit-Button auf der Seite platziert. Am Ende von der Funktion-'mainscreen' wird der Kommand '.mainloop' ausgeführt, dieser läßt das Fesnter auf dem Bildschirm erscheinen und sorgt dafür, dass die Buttons und Eingabefelder funktionieren.
+Zusätzlich werden in der Funktion-'mainscreen' einige Variablen globalisiert, sodass man im gesamten Programm auf diese zugreifen kann. Ebenfalls werden zwei weitere Styles für die Buttons und die Scrollbar definiert. Zum Label dazu werden das Logo, der Login-, Registrierungs- und Exit-Button auf der Seite platziert. Am Ende von der Funktion-'mainscreen' wird der Command '.mainloop' ausgeführt, dieser lässt das Fenster auf dem Bildschirm erscheinen und sorgt dafür, dass die Buttons und Eingabefelder funktionieren.
 
 ```
 def quit():                                                         
@@ -396,7 +396,7 @@ def register():
     Button(registerScreen, text="Register", width="10", command=registerUser, style='log.TButton').pack()
 ```
 
-Dies ist ein Ausschnitt der 'register'-Funktion, welche ausgelöst wird, wenn der 'Register'-Button auf dem mainscreen gedrückt wird. Zuerst wird ein weiteres Fenster erstellt, das ein PopUp Fenster vom Mainscrenn ist. Dann werden mit 'username' und 'password' zwei Variablen für den Input festgelegt. Als nächstes werden verschiedene Elemente zu dem Fenster hinzugefügt, u.a. zwei 'entry'-Felder. Der Input dieser Felder wird in den Variablen 'username' und 'password' gespeichert. Die Passworteingabe wird als Sterchen '*' dargestellt.
+Dies ist ein Ausschnitt der 'register'-Funktion, welche ausgelöst wird, wenn der 'Register'-Button auf dem mainscreen gedrückt wird. Zuerst wird ein weiteres Fenster erstellt, das ein PopUp Fenster vom Mainscrenn ist. Dann werden mit 'username' und 'password' zwei Variablen für den Input festgelegt. Als nächstes werden verschiedene Elemente zu dem Fenster hinzugefügt, u.a. zwei 'entry'-Felder. Der Input dieser Felder wird in den Variablen 'username' und 'password' gespeichert. Die Passworteingabe wird als Sternchen '*' dargestellt.
 
 ```
 def registerUser():                                                
@@ -453,7 +453,7 @@ def loginUser():
 ```
 
 Diese Funktion wird durch den Login-Button auf dem Login-PopUp-Fenster ausgelöst und startet den Login-Vorgang.
-Der eingegebene Username wird mit einer Liste von allen Dateinamen im aktuellen path abgeglichen. Bei einer Übereinstimmung wird die entsprechende Datei geöffnet und das vom User eingegebene Passwort mit dem gespeichertem verglichen. Für den Fall das entweder Username oder Passwort falsch sind, wird ein Info-Fenster erstellt und der User kann erneut versuchen sich einzulogen. War der Login erfolgreich bekommt der User ein Info-Fenster und der username wird in einer globalen Variable gespeichert, um ihn während des Chats als Anrede zu verwenden. Ám Ende wird das Login-Fenster geschlossen und die Funktion 'userselection', welche den eigentlichen Chatbot startet, ausgeführt.
+Der eingegebene Username wird mit einer Liste von allen Dateinamen im aktuellen path abgeglichen. Bei einer Übereinstimmung wird die entsprechende Datei geöffnet und das vom User eingegebene Passwort mit dem gespeichertem verglichen. Für den Fall das entweder Username oder Passwort falsch sind, wird ein Info-Fenster erstellt und der User kann erneut versuchen sich einzuloggen. War der Login erfolgreich bekommt der User ein Info-Fenster und der username wird in einer globalen Variable gespeichert, um ihn während des Chats als Anrede zu verwenden. Ám Ende wird das Login-Fenster geschlossen und die Funktion 'userselection', welche den eigentlichen Chatbot startet, ausgeführt.
 
 ```
 mainscreen()           
@@ -574,7 +574,7 @@ Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data
     </li>
 </ol>
 
-Alle Links wurden zuletzt erfolgreich am 01.12.2022 um --.-- Uhr geöffnet.
+Alle Links wurden zuletzt erfolgreich am 01.12.2022 um 15.23 Uhr geöffnet.
 
 ## Eigenständigkeitserklärung <a name="eigen"></a>
 

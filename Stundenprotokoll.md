@@ -121,7 +121,7 @@ Zudem habe ich mich angefangen mit GitHub und mit der Programmiersprache Markdow
 
 ## 25.08.2022 Jan Drewes <a name="jan2"></a>
 
-Ich habe heute wieder im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt, ob wir nicht ein automatisiertes Bewässerungssystem machen für eine Zimmerpflanze. Diese Idee haben wir erstmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre, wenn wir etwas machen, was nur programmiert wird, da Louis ja in Frankreich ist. Wir überlegen also noch mal weiter, aber planen nächste Woche anzufangen.
+Ich habe heute wieder im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt, ob wir nicht ein automatisiertes Bewässerungssystem machen für eine Zimmerpflanze. Diese Idee haben wir ersteinmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre, wenn wir etwas machen, was nur programmiert wird, da Louis ja in Frankreich ist. Wir überlegen also noch mal weiter, aber planen nächste Woche anzufangen.
 
 ## 26.08.2022 Louis Lemberg <a name="louis2"></a>
 
@@ -210,7 +210,7 @@ Am Wochenende habe ich mich theoretisch darum informiert, wie man einen Chatbot 
 
 ## 19.09.2022 Jan Drewes <a name="jan7"></a>
 
-Heute habe ich angefangen pytorch zulernen, also Neural Networks. Dies habe ich getan, durch die offizielle pytorch Seite (https://pytorch.org/tutorials/index.html). Ich habe angefangen mir die Basics von pytorch anzuschauen, um mich langsam drauf hinzuarbeiten, dass ich den Chatbot anfangen kann. Angefangen habe ich mit tensors und dann habe ich mir Neural Networks angeschaut und wie sie funktionieren.
+Heute habe ich angefangen pytorch zu lernen, also Neural Networks. Dies habe ich getan, durch die offizielle pytorch Seite (https://pytorch.org/tutorials/index.html). Ich habe angefangen mir die Basics von pytorch anzuschauen, um mich langsam drauf hinzuarbeiten, dass ich den Chatbot anfangen kann. Angefangen habe ich mit tensors und dann habe ich mir Neural Networks angeschaut und wie sie funktionieren.
 
 ## 20.09.2022 Louis Lemberg <a name="louis6"></a>
 
@@ -277,7 +277,7 @@ Dieser Code holt sich aus der .json Datei eine Reihe an einzelnen Buchstaben die
 
 ## 25.09.2022 Louis Lemberg <a name="louis7"></a>
 
-Ich habe mich jetzt erstmal dazu entschieden mir anzugucken, wie man mit tkinter in Python Programme designen kann. Dafür habe ich erstmal, um die Anordnung von Elementen zu üben, ein TicTacToe Feld mit 9 Buttons erstellt. Als nächstes möchte ich dann ein erstes mögliches Design für einen Chatbot programmieren.
+Ich habe mich jetzt ersteinmal dazu entschieden mir anzugucken, wie man mit tkinter in Python Programme designen kann. Dafür habe ich ersteinmal, um die Anordnung von Elementen zu üben, ein TicTacToe Feld mit 9 Buttons erstellt. Als nächstes möchte ich dann ein erstes mögliches Design für einen Chatbot programmieren.
 
 <details>
     <summary>TicTacToe Layout</summary>
@@ -398,7 +398,7 @@ window.mainloop()
 ```
 </details>
 
-Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan und ich getrennt arbeiten mussten, sagen, dass ich nicht wirklich zufrieden bin. Durch die vielen Aktivitäten und die sehr langgehende Schule in Frankreich, habe ich nicht immer regelmäßig Zeit gefunden und war leider nie so richtig im Arbeitsflow. Ich werde jetzt dafür natürlich nach Absprache mit Jan alles nachzuholen, was nachzuholen ist und mich versuchen umso mehr einzubringen.
+Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan und ich getrennt arbeiten mussten, sagen, dass ich nicht wirklich zufrieden bin. Durch die vielen Aktivitäten und die sehr lang dauernde Schule in Frankreich, habe ich nicht immer regelmäßig Zeit gefunden und war leider nie so richtig im Arbeitsflow. Ich werde jetzt dafür natürlich nach Absprache mit Jan alles nachzuholen, was nachzuholen ist und mich versuchen umso mehr einzubringen.
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -429,7 +429,7 @@ Heute haben wir das letzte entscheidende Programm geschrieben, durch welches wir
 
 ## Stunde vom Montag, den 21.11.2022 <a name="4"></a>
 
-In den heutigen Stunden haben wir uns zunächst einmal gegenseitig unsere Ergebnisse vom Wochenende gezeigt. Dann hat Jan sich daran gesetzt den Code für die GUI nochmal zu verbessern, und Louis hat angefangen die data.json File, in welcher die Daten liegen mit welcher das Model trained, weiter auszubauen, das heißt einfach mehr mögliche Eingaben und Ausgaben hinzugefügt. Darüberhinaus haben wir dem Bot die kleine Extra-Funktion gegeben, dass er nun immer die aktuelle Uhrzeit und Datum nach Auffordern sagen kann. Dafür benutzen wir die datetime library von welcher die Uhrzeit und das Datum bekommen.
+In den heutigen Stunden haben wir uns zunächst einmal gegenseitig unsere Ergebnisse vom Wochenende gezeigt. Dann hat Jan sich daran gesetzt den Code für die GUI nochmal zu verbessern, und Louis hat angefangen die data.json File, in welcher die Daten liegen mit welcher das Model trained, weiter auszubauen, das heißt einfach mehr mögliche Eingaben und Ausgaben hinzugefügt. Darüber hinaus haben wir dem Bot die kleine Extra-Funktion gegeben, dass er nun immer die aktuelle Uhrzeit und Datum nach Auffordern sagen kann. Dafür benutzen wir die datetime library von welcher die Uhrzeit und das Datum bekommen.
 
 ## Stunde vom Montag, den 28.11.2022 <a name="5"></a>
 

@@ -46,7 +46,7 @@ for x in range (0, 3):                                                  #Diese f
     num_epochs = 1000
     batch_size = 8
     learning_rate = 0.001
-    input_size = len(X_train[0])                                        #Deffiniert Variabln für das NeuralNetwork
+    input_size = len(X_train[0])                                        #Definiert Variablen für das NeuralNetwork
     hidden_size = 8
     output_size = len(tags)
 
@@ -68,7 +68,7 @@ for x in range (0, 3):                                                  #Diese f
     criterion = nn.CrossEntropyLoss()                                   #Criterion rechnet den Loss
     optimizer = to.optim.Adam(model.parameters(), lr=learning_rate)     #Ermöglicht den fortschritt beim lernen
 
-    for epoch in range(num_epochs):                                     #Sagt dem NeuralNetwork wie es die Iterations machen soll und caluliert den Loss
+    for epoch in range(num_epochs):                                     #Sagt dem NeuralNetwork wie es die Iterations machen soll und kalkuliert den Loss
         for (words, labels) in train_loader:
             words = words
             labels = labels
