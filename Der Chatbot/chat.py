@@ -9,7 +9,7 @@ data_json = 'Der Chatbot/Data.json'
 with open(data_json, 'r', encoding='utf-8') as file:                #Lädt Data.JSON
     intents = json.loads(file.read())
 
-FILE = "data.pth"
+FILE = "Der Chatbot/data.pth"
 data = torch.load(FILE)                                             #Lädt das Ergebnis von Train.py
 
 input_size = data["input_size"]

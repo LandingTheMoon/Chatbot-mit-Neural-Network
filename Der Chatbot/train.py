@@ -94,7 +94,7 @@ for x in range (0, 3):                                                  #Diese f
         "tags": tags
     }
 
-    FILE = "data.pth"                                                   #Speichert das Ergebnis
+    FILE = "Der Chatbot/data.pth"                                       #Speichert das Ergebnis
     to.save(data, FILE)
 
     print(f'training complete. file saved to {FILE}')
