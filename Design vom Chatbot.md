@@ -1,7 +1,7 @@
 <h1 align=center>Der Chatbot</h1>
 
 <div align=center>
-    <img src="Bilder/img1.png", width=275></img>
+    <img src="Bilder/img1.png", width=275, border=3></img>
     <h3>Startseite</h3><br>
 </div>
 
