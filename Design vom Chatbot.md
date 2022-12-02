@@ -1,7 +1,7 @@
 <h1 align=center>Der Chatbot</h1>
 
 <div align=center>
-    <img src="Bilder/img1.png", width=275, border=3></img>
+    <img src="Bilder/img1.png", width=275></img>
     <h3>Startseite</h3><br>
 </div>
 
@@ -16,12 +16,8 @@
 </div><br>
 
 <div align=center>
-    <img src="Bilder/img5.png", width=275, margin=5, , hspace=20></img><img src="Bilder/img6.png", width=275, margin=5, hspace=20, vspace=75></img>
+    <img src="Bilder/img5.png", width=275, margin=5, , hspace=20></img><img src="Bilder/img7.png", width=275, hspace=20></img>
 </div><br>
-
-<div align=center>
-    <img src="Bilder/img7.png", width=275></img>
-</div>
 
 <h1 align=center>Der Code</h1>
 
