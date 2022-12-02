@@ -16,7 +16,7 @@
 </div>
 
 <div align=center>
-    <img src="Bilder/img5.png", width=275, margin=5, , hspace=20></img><img src="Bilder/img6.png", width=275, margin=5, hspace=20, vspace=75></img>
+    <img src="Bilder/img5.png", width=275, margin=5, , hspace=20></img><img src="Bilder/img6.png", width=275, margin=5, hspace=20, vspace=150></img>
 </div>
 
 <div align=center>
