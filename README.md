@@ -540,7 +540,7 @@ Die Funktion 'delay' ist die zweite Funktion in 'userselection', die das Program
 
 ## Wie führt man den Chatbot aus? <a name="ausführen"></a>
 
-Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regrestrieren.
+Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regristrieren.
 
 ## Quellen <a name="sources"></a>
 
