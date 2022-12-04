@@ -6,7 +6,7 @@ stemmer = PorterStemmer()
 def tokenize(sentence):                     #Funktion um einen Satz in einzelne Wörter zu ändern
     return nltk.word_tokenize(sentence)
 
-
+ 
 def stem(word):                             #Funktion um die Wörter auf den Wortursprung runter zu brechen
     return stemmer.stem(word.lower())       #Also z.B. Input = "walking" Stem = "walk"
 

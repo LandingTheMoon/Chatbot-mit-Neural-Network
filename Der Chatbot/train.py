@@ -84,7 +84,7 @@ for x in range (0, 3):                                                  #Diese f
             print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
     print(f'final loss: {loss.item():.4f}')
-
+ 
     data = {                                                            #Definiert die benutzten Variablen zur Verwendung in einem anderen Program
         "model_state": model.state_dict(),
         "input_size": input_size,

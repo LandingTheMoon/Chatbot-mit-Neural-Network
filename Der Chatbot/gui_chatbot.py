@@ -247,7 +247,7 @@ def loginUser():                                                    #Diese Funkt
 
     username_entry1.delete(0, END)                                  #Diese beiden Zeilen leeren die Eingabefelder
     password_entry1.delete(0, END)
-
+ 
     list_of_files = glob.glob('Der Chatbot/**')                     #Hier wird eine Variable erstellt, die aus einer Liste an Dateien besteht vom Unterordner 'Der Chatbot'
     if "Der Chatbot\\" + username_input in list_of_files:           #Diese If-Clause schaut, ob der angegebene Username in der Liste von Dateien ist
         file1 = open("Der Chatbot\\" + username_input, "r")         #Wenn ja, dann wird hier diese Datei geöffnet

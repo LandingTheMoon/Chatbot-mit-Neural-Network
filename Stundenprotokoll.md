@@ -422,7 +422,7 @@ labels = labels.type(to.LongTensor)
 ```
 
 Labels ist hierbei die Variabel für den Input und der Rest ändert den tensor.type, also wie der tensor hinterlegt ist und aussieht.
-
+ 
 ## Stunde vom Donnerstag, den 17.11.2022 <a name="3"></a>
 
 Heute haben wir das letzte entscheidende Programm geschrieben, durch welches wir nun wirklich mit dem Chatbot schreiben können. Dies hat alles sehr gut funktioniert, sodass wir angefangen haben den Chatbot mit einem Design zu verknüpfen. Dies hat leider noch nicht wirklich funktioniert, sodass Jan sich diesem Problem zu Hause nochmal widmen wird. Louis wird sich über das Wochenende mit dem Designen der GitHub-Projektseite beschäftigen.

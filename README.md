@@ -71,7 +71,7 @@ Louis Lemberg (@MindOfUs)</h3>
             </li>
         </ol>
     </li>
-    <li>
+    <li> 
         <a href="#ausführen">Wie führt man den Chatbot aus?</a>
     </li>
     <li>

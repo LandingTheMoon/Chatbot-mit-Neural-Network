@@ -26,7 +26,7 @@
 <div align=center>
     <img src="Bilder/img9.png", width=400></img>
 </div>
-
+ 
 <h2>nltk_utils.py</h2>
 
 <div align=center>

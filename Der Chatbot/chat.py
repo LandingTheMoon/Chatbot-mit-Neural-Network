@@ -11,7 +11,7 @@ with open(data_json, 'r', encoding='utf-8') as file:                #Lädt Data.
 
 FILE = "Der Chatbot/data.pth"
 data = torch.load(FILE)                                             #Lädt das Ergebnis von Train.py
-
+ 
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]                                   #Holt sich die Parameter und Variablen aus Train.py
