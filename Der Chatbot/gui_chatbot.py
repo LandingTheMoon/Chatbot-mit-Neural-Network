@@ -8,6 +8,7 @@ from chat import get_response, get_tag, bot_name
 from datetime import datetime
 import os
 import webbrowser
+import glob
 
 url = "https://www.google.com/search?q="                            #Webadresse definiert
 
@@ -197,7 +198,7 @@ def registerUser():                                                 #Diese Funkt
         username_info = username.get()                              #Hier werden Username und Passwort angefordert
         password_info = password.get()
 
-        file = open(username_info, "w")                             #Hier wird eine Datei erstellt, die den Username als Namen hat
+        file = open("Der Chatbot/" + username_info, "w")                             #Hier wird eine Datei erstellt, die den Username als Namen hat
         file.write(username_info+"\n")                              #Hier wird der Username in die Datei geschrieben
         file.write(password_info)                                   #Und hier das Password in der nächsten Zeile
         file.close()                                                #Hier wird die Datei wieder geschlossen
@@ -247,9 +248,9 @@ def loginUser():                                                    #Diese Funkt
     username_entry1.delete(0, END)                                  #Diese beiden Zeilen leeren die Eingabefelder
     password_entry1.delete(0, END)
 
-    list_of_files = os.listdir()                                    #Hier wird eine Variable erstellt, die aus einer Liste an Dateien besteht fom aktuellen Path
-    if username_input in list_of_files:                             #Diese If-Clause schaut, ob der angegebene Username in der Liste von Dateien ist
-        file1 = open(username_input, "r")                           #Wenn ja, dann wird hier diese Datei geöffnet
+    list_of_files = glob.glob('Der Chatbot/**')                     #Hier wird eine Variable erstellt, die aus einer Liste an Dateien besteht vom Unterordner 'Der Chatbot'
+    if "Der Chatbot\\" + username_input in list_of_files:           #Diese If-Clause schaut, ob der angegebene Username in der Liste von Dateien ist
+        file1 = open("Der Chatbot\\" + username_input, "r")         #Wenn ja, dann wird hier diese Datei geöffnet
         verify = file1.read().splitlines()                          #Hier werden die beiden Zeilen der Datei getrennt gelesen
         if password_input in verify:                                #Diese If-Clause überprüft, ob das angegebene Passwort mit dem gespeichertem übereinstimmt
             tkinter.messagebox.showinfo(title="Info", message="Login succesful!")       #Ist dies der Fall, so kommt ein Info-Fenster was sagt, dass das Einlogen funktioniert hat
