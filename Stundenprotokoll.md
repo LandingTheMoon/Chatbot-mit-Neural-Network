@@ -121,7 +121,7 @@ Zudem habe ich mich angefangen mit GitHub und mit der Programmiersprache Markdow
 
 ## 25.08.2022 Jan Drewes <a name="jan2"></a>
 
-Ich habe heute wieder im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt, ob wir nicht ein automatisiertes Bewässerungssystem machen für eine Zimmerpflanze. Diese Idee haben wir ersteinmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre, wenn wir etwas machen, was nur programmiert wird, da Louis ja in Frankreich ist. Wir überlegen also noch mal weiter, aber planen nächste Woche anzufangen.
+Ich habe heute wieder im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt, ob wir nicht ein automatisiertes Bewässerungssystem machen für eine Zimmerpflanze. Diese Idee haben wir erst einmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre, wenn wir etwas machen, was nur programmiert wird, da Louis ja in Frankreich ist. Wir überlegen also noch mal weiter, aber planen nächste Woche anzufangen.
 
 ## 26.08.2022 Louis Lemberg <a name="louis2"></a>
 
@@ -277,7 +277,7 @@ Dieser Code holt sich aus der .json Datei eine Reihe an einzelnen Buchstaben die
 
 ## 25.09.2022 Louis Lemberg <a name="louis7"></a>
 
-Ich habe mich jetzt ersteinmal dazu entschieden mir anzugucken, wie man mit tkinter in Python Programme designen kann. Dafür habe ich ersteinmal, um die Anordnung von Elementen zu üben, ein TicTacToe Feld mit 9 Buttons erstellt. Als nächstes möchte ich dann ein erstes mögliches Design für einen Chatbot programmieren.
+Ich habe mich jetzt erst einmal dazu entschieden mir anzugucken, wie man mit tkinter in Python Programme designen kann. Dafür habe ich ersteinmal, um die Anordnung von Elementen zu üben, ein TicTacToe Feld mit 9 Buttons erstellt. Als nächstes möchte ich dann ein erstes mögliches Design für einen Chatbot programmieren.
 
 <details>
     <summary>TicTacToe Layout</summary>
