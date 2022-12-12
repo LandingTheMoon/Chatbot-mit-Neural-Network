@@ -97,7 +97,7 @@
     </tr>
     <tr>
             <td>
-                <a href=#4>4. Stunde vom Montag, den 22.11.2022
+                <a href=#4>4. Stunde vom Montag, den 21.11.2022
             </td>
             <td>
                 <a href="#5">5. Stunde vom Montag, den 28.11.2022</a>
