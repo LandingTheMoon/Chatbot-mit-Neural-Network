@@ -4,7 +4,7 @@
         "patterns": ["test", "1,2,3"],
         "responses": ["Test succesful!"]
     },
-    {
+    { 
         "tag": "greetings",
         "patterns": ["Hi", "Hello", "Howdy", "Goodday", "Hey", "Nice to see you"],
         "responses": ["Hello. How are you?", "How are you?", "How can I help?"]

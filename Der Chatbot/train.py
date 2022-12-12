@@ -9,7 +9,7 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize, stem
 
 for x in range (0, 3):                                                  #Diese for-Loop führt das ganze Programm dreimal aus damit auf jedenfall die Tags unterscheiden kann
-    data_json = 'Data.json'
+    data_json = 'Der Chatbot/Data.json'
 
     with open(data_json, 'r', encoding='utf-8') as file:                #Lädt die JSON-Datei
         data = json.loads(file.read())
@@ -46,7 +46,7 @@ for x in range (0, 3):                                                  #Diese f
     num_epochs = 1000
     batch_size = 8
     learning_rate = 0.001
-    input_size = len(X_train[0])                                        #Deffiniert Variabln für das NeuralNetwork
+    input_size = len(X_train[0])                                        #Definiert Variablen für das NeuralNetwork
     hidden_size = 8
     output_size = len(tags)
 
@@ -68,7 +68,7 @@ for x in range (0, 3):                                                  #Diese f
     criterion = nn.CrossEntropyLoss()                                   #Criterion rechnet den Loss
     optimizer = to.optim.Adam(model.parameters(), lr=learning_rate)     #Ermöglicht den fortschritt beim lernen
 
-    for epoch in range(num_epochs):                                     #Sagt dem NeuralNetwork wie es die Iterations machen soll und caluliert den Loss
+    for epoch in range(num_epochs):                                     #Sagt dem NeuralNetwork wie es die Iterations machen soll und kalkuliert den Loss
         for (words, labels) in train_loader:
             words = words
             labels = labels
@@ -84,7 +84,7 @@ for x in range (0, 3):                                                  #Diese f
             print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
     print(f'final loss: {loss.item():.4f}')
-
+ 
     data = {                                                            #Definiert die benutzten Variablen zur Verwendung in einem anderen Program
         "model_state": model.state_dict(),
         "input_size": input_size,
@@ -94,7 +94,7 @@ for x in range (0, 3):                                                  #Diese f
         "tags": tags
     }
 
-    FILE = "data.pth"                                                   #Speichert das Ergebnis
+    FILE = "Der Chatbot/data.pth"                                       #Speichert das Ergebnis
     to.save(data, FILE)
 
     print(f'training complete. file saved to {FILE}')

@@ -121,7 +121,7 @@ Zudem habe ich mich angefangen mit GitHub und mit der Programmiersprache Markdow
 
 ## 25.08.2022 Jan Drewes <a name="jan2"></a>
 
-Ich habe heute wieder im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt, ob wir nicht ein automatisiertes Bewässerungssystem machen für eine Zimmerpflanze. Diese Idee haben wir erstmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre, wenn wir etwas machen, was nur programmiert wird, da Louis ja in Frankreich ist. Wir überlegen also noch mal weiter, aber planen nächste Woche anzufangen.
+Ich habe heute wieder im Unterricht überlegt welches Projekt wir angehen wollen. Wir haben uns zuhause überlegt, ob wir nicht ein automatisiertes Bewässerungssystem machen für eine Zimmerpflanze. Diese Idee haben wir erst einmal nach hinten verschoben, weil wir uns überlegt haben das es einfacher wäre, wenn wir etwas machen, was nur programmiert wird, da Louis ja in Frankreich ist. Wir überlegen also noch mal weiter, aber planen nächste Woche anzufangen.
 
 ## 26.08.2022 Louis Lemberg <a name="louis2"></a>
 
@@ -210,7 +210,7 @@ Am Wochenende habe ich mich theoretisch darum informiert, wie man einen Chatbot 
 
 ## 19.09.2022 Jan Drewes <a name="jan7"></a>
 
-Heute habe ich angefangen pytorch zulernen, also Neural Networks. Dies habe ich getan, durch die offizielle pytorch Seite (https://pytorch.org/tutorials/index.html). Ich habe angefangen mir die Basics von pytorch anzuschauen, um mich langsam drauf hinzuarbeiten, dass ich den Chatbot anfangen kann. Angefangen habe ich mit tensors und dann habe ich mir Neural Networks angeschaut und wie sie funktionieren.
+Heute habe ich angefangen pytorch zu lernen, also Neural Networks. Dies habe ich getan, durch die offizielle pytorch Seite (https://pytorch.org/tutorials/index.html). Ich habe angefangen mir die Basics von pytorch anzuschauen, um mich langsam drauf hinzuarbeiten, dass ich den Chatbot anfangen kann. Angefangen habe ich mit tensors und dann habe ich mir Neural Networks angeschaut und wie sie funktionieren.
 
 ## 20.09.2022 Louis Lemberg <a name="louis6"></a>
 
@@ -277,7 +277,7 @@ Dieser Code holt sich aus der .json Datei eine Reihe an einzelnen Buchstaben die
 
 ## 25.09.2022 Louis Lemberg <a name="louis7"></a>
 
-Ich habe mich jetzt erstmal dazu entschieden mir anzugucken, wie man mit tkinter in Python Programme designen kann. Dafür habe ich erstmal, um die Anordnung von Elementen zu üben, ein TicTacToe Feld mit 9 Buttons erstellt. Als nächstes möchte ich dann ein erstes mögliches Design für einen Chatbot programmieren.
+Ich habe mich jetzt erst einmal dazu entschieden mir anzugucken, wie man mit tkinter in Python Programme designen kann. Dafür habe ich ersteinmal, um die Anordnung von Elementen zu üben, ein TicTacToe Feld mit 9 Buttons erstellt. Als nächstes möchte ich dann ein erstes mögliches Design für einen Chatbot programmieren.
 
 <details>
     <summary>TicTacToe Layout</summary>
@@ -398,7 +398,7 @@ window.mainloop()
 ```
 </details>
 
-Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan und ich getrennt arbeiten mussten, sagen, dass ich nicht wirklich zufrieden bin. Durch die vielen Aktivitäten und die sehr langgehende Schule in Frankreich, habe ich nicht immer regelmäßig Zeit gefunden und war leider nie so richtig im Arbeitsflow. Ich werde jetzt dafür natürlich nach Absprache mit Jan alles nachzuholen, was nachzuholen ist und mich versuchen umso mehr einzubringen.
+Ich muss leider als kleines Fazit von meiner Zeit in Frankreich, in welcher Jan und ich getrennt arbeiten mussten, sagen, dass ich nicht wirklich zufrieden bin. Durch die vielen Aktivitäten und die sehr lang dauernde Schule in Frankreich, habe ich nicht immer regelmäßig Zeit gefunden und war leider nie so richtig im Arbeitsflow. Ich werde jetzt dafür natürlich nach Absprache mit Jan alles nachzuholen, was nachzuholen ist und mich versuchen umso mehr einzubringen.
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -422,17 +422,19 @@ labels = labels.type(to.LongTensor)
 ```
 
 Labels ist hierbei die Variabel für den Input und der Rest ändert den tensor.type, also wie der tensor hinterlegt ist und aussieht.
-
+ 
 ## Stunde vom Donnerstag, den 17.11.2022 <a name="3"></a>
 
 Heute haben wir das letzte entscheidende Programm geschrieben, durch welches wir nun wirklich mit dem Chatbot schreiben können. Dies hat alles sehr gut funktioniert, sodass wir angefangen haben den Chatbot mit einem Design zu verknüpfen. Dies hat leider noch nicht wirklich funktioniert, sodass Jan sich diesem Problem zu Hause nochmal widmen wird. Louis wird sich über das Wochenende mit dem Designen der GitHub-Projektseite beschäftigen.
 
 ## Stunde vom Montag, den 21.11.2022 <a name="4"></a>
 
-In den heutigen Stunden haben wir uns zunächst einmal gegenseitig unsere Ergebnisse vom Wochenende gezeigt. Dann hat Jan sich daran gesetzt den Code für die GUI nochmal zu verbessern, und Louis hat angefangen die data.json File, in welcher die Daten liegen mit welcher das Model trained, weiter auszubauen, das heißt einfach mehr mögliche Eingaben und Ausgaben hinzugefügt. Darüberhinaus haben wir dem Bot die kleine Extra-Funktion gegeben, dass er nun immer die aktuelle Uhrzeit und Datum nach Auffordern sagen kann. Dafür benutzen wir die datetime library von welcher die Uhrzeit und das Datum bekommen.
+In den heutigen Stunden haben wir uns zunächst einmal gegenseitig unsere Ergebnisse vom Wochenende gezeigt. Dann hat Jan sich daran gesetzt den Code für die GUI nochmal zu verbessern, und Louis hat angefangen die data.json File, in welcher die Daten liegen mit welcher das Model trained, weiter auszubauen, das heißt einfach mehr mögliche Eingaben und Ausgaben hinzugefügt. Darüber hinaus haben wir dem Bot die kleine Extra-Funktion gegeben, dass er nun immer die aktuelle Uhrzeit und Datum nach Auffordern sagen kann. Dafür benutzen wir die datetime library von welcher die Uhrzeit und das Datum bekommen.
 
 ## Stunde vom Montag, den 28.11.2022 <a name="5"></a>
 
 Heute haben wir uns trotz Ausfall in der Schule zusammengesetzt und haben die Programmierung final abgeschlossen. Wir haben uns ebenfalls am Wochenende über Discord getroffen und weitere Erweiterungen hinzugefügt. So kann unser Chatbot nun, falls er etwas nicht erkennt, dieses nach kurzem Nachfragen im Internet suchen. Dafür nutzen wir das webbrowser-PlugIn. Zudem haben wir ein Login und Register System hinzugefügt. Dieses funktioniert so, dass nach jeder Registrierung eine .txt-Datei erstellt wird, mit dem Username und Password. Beim LogIn wird dann überprüft, ob es diese Kombination von Username und Passwort auch wirklich gibt. Weitergehend haben wir ein Logo für unseren Chatbot erstellt und allgemein ein bisschen das Design durch Farben verschönert. Jetzt müssen wir nur noch die letzten Texte auf der Projektseite schreiben und die letzten Dateien kommentieren.
 
 ## Stunde vom Donnerstag, den 01.12.2022 <a name="6"></a>
+
+Heute haben wir uns wieder trotz Ausfall zusammen gesetzt, um unser Projekt zu finalisieren. Wir haben die letzten Dateien auskommentiert, die letzte Texte geschrieben und eine Seite mit Bildern vom Chatbot und Code erstellt. Letztere müssen wir nun noch über das Wochenende finalisieren.
