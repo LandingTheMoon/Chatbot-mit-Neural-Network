@@ -97,13 +97,21 @@
     </tr>
     <tr>
             <td>
-                <a href=#4>4. Stunde vom Montag, den 21.11.2022
+                <a href=#4>4. Stunde vom Montag, den 21.11.2022</a>
             </td>
             <td>
                 <a href="#5">5. Stunde vom Montag, den 28.11.2022</a>
             </td>
             <td>
                 <a href="#6">6. Stunde vom Donnerstag, den 01.12.2022</a>
+            </td>
+    </tr>
+    <tr>
+            <td>
+                <a href=#4>7. Stunde vom Montag, den 12.12.2022</a>
+            </td>
+            <td>
+                <a href="#5">8. Stunde vom Donnerstag, den 15.12.2022</a>
             </td>
     </tr>
 </table>
@@ -438,3 +446,11 @@ Heute haben wir uns trotz Ausfall in der Schule zusammengesetzt und haben die Pr
 ## Stunde vom Donnerstag, den 01.12.2022 <a name="6"></a>
 
 Heute haben wir uns wieder trotz Ausfall zusammen gesetzt, um unser Projekt zu finalisieren. Wir haben die letzten Dateien auskommentiert, die letzte Texte geschrieben und eine Seite mit Bildern vom Chatbot und Code erstellt. Letztere müssen wir nun noch über das Wochenende finalisieren.
+
+## Stunde vom Montag, den 12.12.2022 <a name="7"></a>
+
+Heute haben wir uns nochmal die Projektseite angeguckt und finale kleine Änderungen besprochen. Außerdem haben wir letzte Rechtschreibfehler korrigiert und angefangen das Programm an dem LehrerPC zum Laufen zu bekommen, indem wir Anaconda installiert haben. Dies hat jedoch so lange gedauert, dass wir leider keine Zeit mehr hatten die nötigen Librarys zu installieren.
+
+## Stunde vom Donnerstag, den 15.12.2022 <a name="8"></a>
+
+Heute haben wir an der letzten Stunde angeknüpft und haben alle nötigen Librarys installiert und generell das Projekt am LehrerPC zum Laufen bekommen. Danach haben wir noch ein letztes Mal die Projektseite kontrolliert und alles für die Abgabe vorbereitet.
