@@ -28,5 +28,5 @@ def bag_of_words(tokenized_sentence, words):
 Die letzte Funktion in nltk_utils.py konvertiert die Eingabe vom User (Satz) in Zahlen, denn nur so kann Train.py den Input verarbeiten. Der Output der vorherigen Funktionen wird als Input verendet. Die Funktion zählt die Anzahl der Worte und wie oft sie vorkommen. Diese Information speichert in Form eines Arrays. Dies könnte z.B. so aussehen:
 
 <div align=center>
-    <img src=https://miro.medium.com/max/1400/1*3IACMnNpwVlCl8kSTJocPA.webp, height="200", border="5"></img>
+    <img src="https://miro.medium.com/max/1400/1*3IACMnNpwVlCl8kSTJocPA.webp"></img>
 </div>
