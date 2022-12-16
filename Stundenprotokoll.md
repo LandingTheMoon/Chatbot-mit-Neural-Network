@@ -108,10 +108,10 @@
     </tr>
     <tr>
             <td>
-                <a href=#4>7. Stunde vom Montag, den 12.12.2022</a>
+                <a href=#7>7. Stunde vom Montag, den 12.12.2022</a>
             </td>
             <td>
-                <a href="#5">8. Stunde vom Donnerstag, den 15.12.2022</a>
+                <a href="#8">8. Stunde vom Donnerstag, den 15.12.2022</a>
             </td>
     </tr>
 </table>

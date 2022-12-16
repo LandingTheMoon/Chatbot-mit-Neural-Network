@@ -621,7 +621,7 @@ Um unseren Chatbot auf diese Weise zum Laufen zu kriegen, muss man nur die 'Chat
     </li>
 </ol>
 
-Alle Links wurden zuletzt erfolgreich am 01.12.2022 um 15.23 Uhr geöffnet. Davon ausgenommen sind die letzten beiden Quellen, diese wurden zuletzt am 16.12.2022 geöffnet.
+Alle Links wurden zuletzt erfolgreich am 01.12.2022 um 15.23 Uhr geöffnet. Davon ausgenommen sind die letzten beiden Quellen, diese wurden zuletzt am 16.12.2022 um 12:34 geöffnet.
 
 ## Eigenständigkeitserklärung <a name="eigen"></a>
 
