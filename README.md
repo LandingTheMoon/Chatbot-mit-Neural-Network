@@ -10,7 +10,7 @@ Louis Lemberg (@MindOfUs)</h3>
 
 <ol>
     <li>
-        <a href="#einführung">Einführung</a>
+        <a href="#einfuehrung">Einführung</a>
         <ol>
             <li>
                 <a href="#gruppe">Die Gruppe</a>
@@ -72,7 +72,7 @@ Louis Lemberg (@MindOfUs)</h3>
         </ol>
     </li>
     <li> 
-        <a href="#ausführen">Wie führt man den Chatbot aus?</a>
+        <a href="#ausfuehren">Wie führt man den Chatbot aus?</a>
     </li>
     <li>
         <a href="Design vom Chatbot.md">Design vom Chatbot und Fotos vom Code</a>
@@ -88,7 +88,7 @@ Louis Lemberg (@MindOfUs)</h3>
     </li>
 </ol>
 
-## Einführung <a name="einführung"></a>
+## Einführung <a name="einfuehrung"></a>
 
 Im ersten Abschnitt unserer Projektseite werden wir zuerst einmal unsere Gruppe, sowie unsere Projektidee erklären.
 
@@ -541,7 +541,7 @@ def delay():
 
 Die Funktion 'delay' ist die zweite Funktion in 'userselection', die das Programm schließt. Bevor das Programm endgültig geschlossen, wird der User mit einer Nachricht darüber informiert. Nach einer weiteren Zeitverzögerung wird das Programm mit der quit-Funktion beendet.
 
-## Wie führt man den Chatbot aus? <a name="ausführen"></a>
+## Wie führt man den Chatbot aus? <a name="ausfuehren"></a>
 
 ### 1. Variante mit eigen ständigen Einrichten:
 
