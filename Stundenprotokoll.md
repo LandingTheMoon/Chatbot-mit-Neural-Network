@@ -453,4 +453,4 @@ Heute haben wir uns nochmal die Projektseite angeguckt und finale kleine Änderu
 
 ## Stunde vom Donnerstag, den 15.12.2022 <a name="8"></a>
 
-Heute haben wir an der letzten Stunde angeknüpft und haben alle nötigen Librarys installiert und generell das Projekt am LehrerPC zum Laufen bekommen. Danach haben wir noch ein letztes Mal die Projektseite kontrolliert und alles für die Abgabe vorbereitet.
+Heute haben wir an der letzten Stunde angeknüpft und haben versucht alle nötigen Librarys installiert und generell das Projekt am LehrerPC zum Laufen bekommen. Dies hat aber leider nicht so funktioniert wie wir es uns vorgestellt haben, sodass wir uns darauf verständigt haben. Das Programm in eine .exe Datei zu verpacken, um die Ausführung zu erleichtern. Danach haben wir noch ein letztes Mal die Projektseite kontrolliert und alles für die Abgabe vorbereitet.
