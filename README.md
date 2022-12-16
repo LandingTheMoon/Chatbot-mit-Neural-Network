@@ -132,7 +132,7 @@ Tkinter ist eine Python-Erweiterung, welche wir dafür benutzt haben, die GUI vo
 
 ## Der Chatbot <a name="chatbot"></a>
 
-In der folgenden Sektion werden wir erklären, wie der Chatbot funktioniert. Dafür benötigen wir die folgenden 6 Dateien: <a href="#data">Data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Alle Dateien bis auf Data.json sind in <a href="#python">Python</a> geschrieben. Für alle Dateien bis auf die Data.json und gui_chatbot.py haben wir uns größtenteils an folgender Seite <a href="https://www.python-engineer.com/posts/chatbot-pytorch/">https://www.python-engineer.com/posts/chatbot-pytorch/</a> orientiert, da es sich dabei um die Programmierung des Neural Networks ging, und wir beide vorher noch keine Erfahrung hatten. Wir haben uns den Code angesehen, verstanden und haben ihn deshalb auch ein wenig erweitert.
+In der folgenden Sektion werden wir erklären, wie der Chatbot funktioniert. Dafür benötigen wir die folgenden 6 Dateien: <a href="#data">Data.json</a>, <a href="#nltk.py">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Alle Dateien bis auf Data.json sind in <a href="#python">Python</a> geschrieben. Für alle Dateien bis auf die Data.json und gui_chatbot.py haben wir uns größtenteils an folgender Seite <a href="https://www.python-engineer.com/posts/chatbot-pytorch/">https://www.python-engineer.com/posts/chatbot-pytorch/</a> orientiert, da es sich dabei um die Programmierung des Neural Networks ging, und wir beide vorher noch keine Erfahrung hatten. Wir haben uns den Code angesehen, verstanden und haben ihn deshalb auch ein wenig erweitert.
 
 ### 1. Data.json <a name="data"></a>
 
@@ -189,7 +189,7 @@ Die zweite Funktion sorgt dafür, dass die Daten jeden Layer durchlaufen damit d
 
 ### 4. train.py <a name="train"></a>
 
-Dieses Programm 'trainiert' den Chatbot auf Basis der <a href="#data">data.json</a> Datei und mit Hilfe der zuvor beschriebenen Programme. Dafür werden alle benötigten Libraries und Funktionen importiert, welche wir in <a href="#model">model.py</a> und <a href="#nltk">nltk_utils.py</a> definiert haben.
+Dieses Programm 'trainiert' den Chatbot auf Basis der <a href="#data">data.json</a> Datei und mit Hilfe der zuvor beschriebenen Programme. Dafür werden alle benötigten Libraries und Funktionen importiert, welche wir in <a href="#model">model.py</a> und <a href="#nltk.py">nltk_utils.py</a> definiert haben.
 
 ```
 for x in range (0, 3):
@@ -234,7 +234,7 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 ```
 
-Im nächsten Schritt werden drei weitere Listen erstellt mit Hilfe der bag_of_words-Funktion aus <a href="#nltk">nltk_utils.py</a>. Danach konvertiert das Programm die Listen zu arrays. Diese beiden Aktionen sind notwendig, damit der Chatbot mit diesen Daten trainieren kann.
+Im nächsten Schritt werden drei weitere Listen erstellt mit Hilfe der bag_of_words-Funktion aus <a href="#nltk.py">nltk_utils.py</a>. Danach konvertiert das Programm die Listen zu arrays. Diese beiden Aktionen sind notwendig, damit der Chatbot mit diesen Daten trainieren kann.
 
 Es werden Variablen festgelegt, die das Neural Network benötigt, und eine Klasse erstellt, in der die Trainigsdaten gespeichert werden.
 
@@ -545,7 +545,7 @@ Die Funktion 'delay' ist die zweite Funktion in 'userselection', die das Program
 
 ### 1. Variante mit eigen ständigen Einrichten:
 
-Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Diese Dateien findet man in dem Unterordner 'Chatbot - Quellcode'. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk, nltk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regristrieren.
+Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk.py">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Diese Dateien findet man in dem Unterordner 'Chatbot - Quellcode'. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk, nltk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regristrieren.
 
 ### 2. Variante mit .exe-Datei
 
