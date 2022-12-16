@@ -540,12 +540,6 @@ Die Funktion 'delay' ist die zweite Funktion in 'userselection', die das Program
 
 ## Wie führt man den Chatbot aus? <a name="ausführen"></a>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk, nltk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regristrieren.
-=======
-=======
->>>>>>> c026ce0 (Revert "Final Update and Check")
 # 1. Variante mit eigen ständigen Einrichten:
 
 Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Diese Dateien findet man in dem Unterordner 'Chatbot - Quellcode'. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk, nltk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regristrieren.
@@ -553,13 +547,6 @@ Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data
 # 2. Variante mit .exe-Datei
 
 Um unseren Chatbot auf diese Weise zum Laufen zu kriegen, muss man nur die 'Chatbot-mit-Neural-Network.exe'-Datei ausführen und schon startet unser Chatbot, sowie bei der anderen Methode auch. Der Ordner liegt zum einen in unserem Ordner auf iServ und zum anderen hängt dieser der Abgabemail an.
-<<<<<<< HEAD
->>>>>>> 27d1b3f (Final Check)
-=======
-=======
-Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk, nltk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regristrieren.
->>>>>>> parent of 186e855 (Final Update and Check)
->>>>>>> c026ce0 (Revert "Final Update and Check")
 
 ## Quellen <a name="sources"></a>
 
