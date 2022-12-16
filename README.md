@@ -50,7 +50,7 @@ Louis Lemberg (@MindOfUs)</h3>
                 <a href="#data">data.json</a>
             </li>
             <li>
-                <a href="#nltk">nltk_utils.py</a>
+                <a href="#nltk.py">nltk_utils.py</a>
             </li>
             <li>
                 <a href="#model">model.py</a>
@@ -159,6 +159,9 @@ Mit dem "tag" bestimmen wir den Namen dieser Themengruppe von "patterns" und "re
     }
 ]
 ```
+
+### 2. nltk-utils.py <a name="nltk.py"></a>
+
 
 ### 3. model.py <a name="model"></a>
 
@@ -540,11 +543,11 @@ Die Funktion 'delay' ist die zweite Funktion in 'userselection', die das Program
 
 ## Wie führt man den Chatbot aus? <a name="ausführen"></a>
 
-# 1. Variante mit eigen ständigen Einrichten:
+### 1. Variante mit eigen ständigen Einrichten:
 
 Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data">data.json</a>, <a href="#nltk">nltk_utils.py</a>, <a href="#model">model.py</a>, <a href="#train">train.py</a>, <a href="#chat">chat.py</a> und <a href="#gui">gui_chatbot.py</a>. Diese Dateien findet man in dem Unterordner 'Chatbot - Quellcode'. Zusätzlich braucht man einen python Interpreter z.B. <a href="#anaconda">Anaconda</a> und die Libraries pytorch, tkinter, tkk, nltk und datetime. Man führt zuerst <a href="#train">train.py</a> aus, um die data.pth Datei zuerstellen. Daraufhin muss man dann <a href="#gui">gui_chatbot.py</a> ausführen, und sich regristrieren.
 
-# 2. Variante mit .exe-Datei
+### 2. Variante mit .exe-Datei
 
 Um unseren Chatbot auf diese Weise zum Laufen zu kriegen, muss man nur die 'Chatbot-mit-Neural-Network.exe'-Datei ausführen und schon startet unser Chatbot, sowie bei der anderen Methode auch. Der Ordner liegt zum einen in unserem Ordner auf iServ und zum anderen hängt dieser der Abgabemail an.
 
@@ -578,9 +581,15 @@ Um unseren Chatbot auf diese Weise zum Laufen zu kriegen, muss man nur die 'Chat
     <li>
         <a href="https://www.tutorialspoint.com/how-to-resize-an-image-using-tkinter">https://www.tutorialspoint.com/how-to-resize-an-image-using-tkinter</a>
     </li>
+    <li>
+        <a href="https://pypi.org/project/auto-py-to-exe/">https://pypi.org/project/auto-py-to-exe/</a>
+    </li>
+    <li>
+        <a href="https://www.tomshardware.com/how-to/create-python-executable-applications">https://www.tomshardware.com/how-to/create-python-executable-applications</a>
+    </li>
 </ol>
 
-Alle Links wurden zuletzt erfolgreich am 01.12.2022 um 15.23 Uhr geöffnet.
+Alle Links wurden zuletzt erfolgreich am 01.12.2022 um 15.23 Uhr geöffnet. Davon ausgenommen sind die letzten beiden Quellen, diese wurden zuletzt am 16.12.2022 geöffnet.
 
 ## Eigenständigkeitserklärung <a name="eigen"></a>
 
