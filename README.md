@@ -549,7 +549,7 @@ Um unseren Chatbot zu verwenden, muss man folgende Dateien laden: <a href="#data
 
 ### 2. Variante mit .exe-Datei
 
-Um unseren Chatbot auf diese Weise zum Laufen zu kriegen, muss man nur die 'Chatbot-mit-Neural-Network.exe'-Datei ausführen und schon startet unser Chatbot, sowie bei der anderen Methode auch. Der Ordner liegt zum einen in unserem Ordner auf iServ und zum anderen hängt dieser der Abgabemail an.
+Um unseren Chatbot auf diese Weise zum Laufen zu kriegen, muss man nur die 'Chatbot-mit-Neural-Network.exe'-Datei ausführen und schon startet unser Chatbot, sowie bei der anderen Methode auch. Der Ordner liegt zum einen in unserem Ordner auf iServ und zum anderen hängt dieser der Abgabemail an. Diese Variante haben wir für das Testen für Herrn Buhl vorgesehen.
 
 ## Quellen <a name="sources"></a>
 
